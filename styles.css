@@ -1010,6 +1010,11 @@ section {
 }
 
 @media (max-width: 576px) {
+     .blob {
+        width: 300px;
+        height: 300px;
+    }
+    
     .cta-container,
     .about-buttons {
         flex-direction: column;
