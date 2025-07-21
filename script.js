@@ -1,5 +1,85 @@
 
+// Intersection Observer para animaciones
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in-up');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Observar elementos para animaciones
 document.addEventListener('DOMContentLoaded', function() {
+    // Observar elementos para animaciones
+    const animatedElements = document.querySelectorAll('.reveal-item, .reveal-text');
+    animatedElements.forEach(el => observer.observe(el));
+
+    // Smooth scrolling mejorado
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+
+        // Hide/show navbar on scroll
+        if (currentScrollY > lastScrollY && currentScrollY > 200) {
+            navbar.style.transform = 'translateY(-100%)';
+        } else {
+            navbar.style.transform = 'translateY(0)';
+        }
+
+        lastScrollY = currentScrollY;
+    });
+
+    // Parallax effect para hero
+    const hero = document.querySelector('.hero');
+    const heroContent = document.querySelector('.hero-content');
+
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * -0.5;
+
+        if (heroContent) {
+            heroContent.style.transform = `translateY(${rate}px)`;
+        }
+    });
+
+    // Loading animation
+    const loader = document.querySelector('.loader-wrapper');
+    if (loader) {
+        setTimeout(() => {
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 300);
+        }, 1000);
+    }
     const slider = document.querySelector('.testimonial-slider');
     const dots = document.querySelectorAll('.testimonial-dot');
     const prevBtn = document.querySelector('.testimonial-control.prev');
