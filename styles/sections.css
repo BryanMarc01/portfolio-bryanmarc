@@ -1,0 +1,218 @@
+/* Section specific styling */
+.hero {
+    position: relative;
+    min-height: clamp(32rem, 85vh, 48rem);
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    align-items: center;
+    gap: clamp(2rem, 5vw, 3rem);
+    padding: clamp(6rem, 12vw, 8rem) clamp(1.5rem, 5vw, 4rem) clamp(4rem, 10vw, 6rem);
+    max-width: var(--max-width-xl);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.18), transparent 55%);
+    z-index: 0;
+}
+
+.hero-content {
+    grid-column: span 7;
+    z-index: 1;
+    max-width: 520px;
+    justify-self: center;
+}
+
+.hero .title {
+    font-family: var(--font-family-display);
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--color-neutral-900);
+    margin: 0 0 0.75rem;
+}
+
+.subtitle-container {
+    display: grid;
+    gap: 0.35rem;
+    margin-bottom: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.subtitle {
+    font-size: clamp(1.25rem, 2.8vw, 1.9rem);
+    font-weight: 600;
+    color: var(--color-primary-600);
+    margin: 0;
+}
+
+.author {
+    font-size: 1rem;
+    color: var(--color-neutral-600);
+    margin: 0;
+}
+
+.cta-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.hero-image {
+    grid-column: span 5;
+    position: relative;
+    z-index: 1;
+    justify-self: center;
+}
+
+.hero-image .blob {
+    position: absolute;
+    inset: 10% 5% 5% 5%;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.35), rgba(14, 165, 233, 0.25));
+    filter: blur(0px);
+    border-radius: 48% 52% 63% 37% / 52% 43% 57% 48%;
+    animation: blobMove 12s ease-in-out infinite;
+    z-index: -1;
+}
+
+.profile-image {
+    width: min(320px, 65vw);
+    border-radius: 34% 66% 60% 40% / 46% 45% 55% 54%;
+    object-fit: cover;
+    border: 6px solid rgba(255, 255, 255, 0.75);
+    box-shadow: var(--shadow-lg);
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    place-items: center;
+    gap: 0.75rem;
+    color: var(--color-neutral-600);
+}
+
+.scroll-indicator .mouse {
+    width: 32px;
+    height: 52px;
+    border: 2px solid rgba(148, 163, 184, 0.45);
+    border-radius: 20px;
+    position: relative;
+}
+
+.scroll-indicator .wheel {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 12px;
+    border-radius: 999px;
+    background: var(--color-primary-500);
+    animation: scrollWheel 2.2s ease-in-out infinite;
+}
+
+.scroll-text {
+    font-size: 0.85rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+.projects {
+    background: linear-gradient(180deg, transparent, rgba(99, 102, 241, 0.05));
+}
+
+.testimonials {
+    background: var(--color-neutral-100);
+}
+
+.about {
+    background: #fff;
+}
+
+.contact {
+    background: linear-gradient(180deg, rgba(99, 102, 241, 0.05), transparent);
+}
+
+.footer {
+    margin-top: clamp(4rem, 8vw, 6rem);
+}
+
+@keyframes blobMove {
+    0%, 100% {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    33% {
+        transform: translate3d(8px, -12px, 0) rotate(4deg);
+    }
+    66% {
+        transform: translate3d(-10px, 6px, 0) rotate(-3deg);
+    }
+}
+
+@keyframes scrollWheel {
+    0%, 100% {
+        opacity: 0;
+        transform: translate(-50%, 0);
+    }
+    45% {
+        opacity: 1;
+    }
+    60% {
+        transform: translate(-50%, 12px);
+    }
+}
+
+@media (max-width: 1100px) {
+    .hero-content {
+        grid-column: span 6;
+    }
+
+    .hero-image {
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        padding-bottom: clamp(5rem, 15vw, 6rem);
+    }
+
+    .hero-content,
+    .hero-image {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .hero-content {
+        justify-self: center;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .cta-container {
+        justify-content: center;
+    }
+
+    .scroll-indicator {
+        bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding-top: clamp(5rem, 18vw, 6rem);
+    }
+
+    .profile-image {
+        width: min(260px, 70vw);
+    }
+}
