@@ -761,10 +761,6 @@ section {
     padding: 20px;
 }
 
-.project-card:hover .project-image img {
-    transform: scale(1.05);
-}
-
 .project-overlay {
     position: absolute;
     top: 0;
@@ -778,10 +774,7 @@ section {
     opacity: 0;
     transition: var(--transition);
     backdrop-filter: blur(4px);
-}
-
-.project-card:hover .project-overlay {
-    opacity: 1;
+    pointer-events: none;
 }
 
 .project-links {
@@ -804,11 +797,6 @@ section {
     opacity: 0;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.project-card:hover .project-link {
-    transform: translateY(0);
-    opacity: 1;
 }
 
 .project-link:hover {
