@@ -1,3 +1,172 @@
+// ============================================
+// INICIALIZACIÓN DE LIBRERÍAS MODERNAS
+// ============================================
+
+// Inicializar AOS (Animate On Scroll)
+AOS.init({
+    duration: 1000,
+    easing: 'ease-out-cubic',
+    once: true,
+    offset: 100,
+    delay: 100,
+});
+
+// Configuración de Particles.js para fondo minimalista B&W
+particlesJS('particles-js', {
+    particles: {
+        number: {
+            value: 80,
+            density: {
+                enable: true,
+                value_area: 800
+            }
+        },
+        color: {
+            value: '#000000'
+        },
+        shape: {
+            type: 'circle',
+            stroke: {
+                width: 0,
+                color: '#000000'
+            }
+        },
+        opacity: {
+            value: 0.1,
+            random: true,
+            anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.05,
+                sync: false
+            }
+        },
+        size: {
+            value: 3,
+            random: true,
+            anim: {
+                enable: true,
+                speed: 2,
+                size_min: 0.1,
+                sync: false
+            }
+        },
+        line_linked: {
+            enable: true,
+            distance: 150,
+            color: '#000000',
+            opacity: 0.05,
+            width: 1
+        },
+        move: {
+            enable: true,
+            speed: 1,
+            direction: 'none',
+            random: true,
+            straight: false,
+            out_mode: 'out',
+            bounce: false,
+        }
+    },
+    interactivity: {
+        detect_on: 'canvas',
+        events: {
+            onhover: {
+                enable: true,
+                mode: 'grab'
+            },
+            onclick: {
+                enable: true,
+                mode: 'push'
+            },
+            resize: true
+        },
+        modes: {
+            grab: {
+                distance: 140,
+                line_linked: {
+                    opacity: 0.2
+                }
+            },
+            push: {
+                particles_nb: 4
+            }
+        }
+    },
+    retina_detect: true
+});
+
+// Registrar plugins de GSAP
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+// Configurar ScrollTrigger
+ScrollTrigger.defaults({
+    toggleActions: "play none none reverse",
+    scroller: "body"
+});
+
+// ============================================
+// ANIMACIONES GSAP
+// ============================================
+
+// Animación del título principal
+gsap.from('.title', {
+    duration: 1.2,
+    y: 100,
+    opacity: 0,
+    ease: 'power4.out',
+    delay: 0.3
+});
+
+// Animación de los botones CTA
+gsap.from('.cta-button', {
+    duration: 1,
+    y: 50,
+    opacity: 0,
+    stagger: 0.2,
+    ease: 'power3.out',
+    delay: 0.8
+});
+
+// Parallax effect para secciones
+gsap.utils.toArray('section').forEach((section, i) => {
+    if (i > 0) {
+        gsap.from(section, {
+            scrollTrigger: {
+                trigger: section,
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: 1
+            },
+            y: 100,
+            opacity: 0.3
+        });
+    }
+});
+
+// Animación de las tarjetas de proyecto con efecto stagger
+gsap.from('.project-card', {
+    scrollTrigger: {
+        trigger: '.projects-grid',
+        start: 'top 70%',
+    },
+    duration: 0.8,
+    y: 80,
+    opacity: 0,
+    stagger: 0.15,
+    ease: 'power3.out'
+});
+
+// Vanilla Tilt para efecto 3D en tarjetas de proyecto
+document.addEventListener('DOMContentLoaded', function() {
+    VanillaTilt.init(document.querySelectorAll('.project-card'), {
+        max: 5,
+        speed: 400,
+        glare: true,
+        'max-glare': 0.2,
+        scale: 1.02
+    });
+});
 
 // Intersection Observer para animaciones
 const observerOptions = {
@@ -332,5 +501,46 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Comentado para no interferir con la animación reveal-text
        setTimeout(typeWriter, 1500);
+    }
+});
+
+// ============================================
+// MODAL PARA PROYECTOS PRIVADOS
+// ============================================
+
+const modal = document.getElementById('privateProjectModal');
+const modalClose = document.querySelector('.modal-close');
+const privateProjectButtons = document.querySelectorAll('.private-project');
+
+// Abrir modal cuando se hace click en proyecto privado
+privateProjectButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevenir scroll
+    });
+});
+
+// Cerrar modal con el botón X
+if (modalClose) {
+    modalClose.addEventListener('click', () => {
+        modal.classList.remove('show');
+        document.body.style.overflow = 'auto';
+    });
+}
+
+// Cerrar modal al hacer click fuera del contenido
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Cerrar modal con tecla ESC
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+        modal.classList.remove('show');
+        document.body.style.overflow = 'auto';
     }
 });
