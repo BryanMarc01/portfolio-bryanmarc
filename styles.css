@@ -1937,10 +1937,16 @@ section {
         box-shadow: var(--box-shadow-lg);
         transition: var(--transition);
         z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
     }
     
     .nav-menu.active {
         top: 70px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
     }
     
     .projects-grid {
