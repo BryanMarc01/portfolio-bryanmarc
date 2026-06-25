@@ -1,803 +1,1700 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryan Marc Sosa Moran | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bryan Marc — Desarrollador Full Stack | Apps Móviles, Plataformas Web e IA en RD</title>
+    <meta name="description" content="Desarrollador Full Stack en Puerto Plata, República Dominicana. Creo aplicaciones móviles (React Native, Kotlin, Flutter), plataformas web (React, Next.js, Node.js), software SaaS a medida y agentes de voz con IA. Solicita una consulta gratis."/>
+    <meta name="keywords" content="desarrollador full stack, programador República Dominicana, desarrollo de aplicaciones móviles, React Native, Kotlin, Flutter, desarrollo web, React, Next.js, Node.js, agentes de voz IA, software a medida, SaaS, landing pages, Puerto Plata, Bryan Marc"/>
+    <meta name="author" content="Bryan Marc Sosa Morán"/>
+    <meta name="robots" content="index, follow, max-image-preview:large"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta name="geo.region" content="DO"/>
+    <meta name="geo.placename" content="Puerto Plata, República Dominicana"/>
+    <link rel="canonical" href="https://bryanmarc.dev/"/>
 
-    <!-- Locomotive Scroll CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="es_DO"/>
+    <meta property="og:site_name" content="Bryan Marc — Full Stack Developer"/>
+    <meta property="og:url" content="https://bryanmarc.dev/"/>
+    <meta property="og:title" content="Bryan Marc — Desarrollador Full Stack | Apps, Web e IA"/>
+    <meta property="og:description" content="Aplicaciones móviles, plataformas web, software SaaS a medida y agentes de voz con IA. Solicita una consulta para tu proyecto."/>
+    <meta property="og:image" content="yo.jpeg"/>
 
-    <!-- AOS (Animate On Scroll) CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Bryan Marc — Desarrollador Full Stack | Apps, Web e IA"/>
+    <meta name="twitter:description" content="Aplicaciones móviles, plataformas web, software SaaS a medida y agentes de voz con IA en República Dominicana."/>
+    <meta name="twitter:image" content="yo.jpeg"/>
+
+    <!-- Datos estructurados — Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://bryanmarc.dev/#person",
+          "name": "Bryan Marc Sosa Morán",
+          "jobTitle": "Desarrollador Full Stack",
+          "url": "https://bryanmarc.dev/",
+          "image": "https://bryanmarc.dev/yo.jpeg",
+          "email": "bmarcenlinea@gmail.com",
+          "telephone": "+1-829-494-6176",
+          "address": { "@type": "PostalAddress", "addressLocality": "Puerto Plata", "addressCountry": "DO" },
+          "sameAs": [
+            "https://www.linkedin.com/in/bryanmarc/",
+            "https://github.com/BryanMarc01",
+            "https://www.instagram.com/bryanmarc_/"
+          ],
+          "knowsAbout": ["React Native","Kotlin","Flutter","React","Next.js","Node.js","MongoDB","PostgreSQL","Firebase","Voice AI","Unity","C#","Docker"]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://bryanmarc.dev/#service",
+          "name": "Bryan Marc — Desarrollo de Software Full Stack",
+          "description": "Desarrollo de aplicaciones móviles, plataformas web, software SaaS a medida, agentes de voz con IA y landing pages de conversión.",
+          "url": "https://bryanmarc.dev/",
+          "telephone": "+1-829-494-6176",
+          "priceRange": "$$",
+          "areaServed": ["República Dominicana","España","Argentina","Latinoamérica"],
+          "address": { "@type": "PostalAddress", "addressLocality": "Puerto Plata", "addressCountry": "DO" },
+          "founder": { "@id": "https://bryanmarc.dev/#person" },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de desarrollo de software",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desarrollo de aplicaciones móviles", "description": "Apps para iOS y Android con React Native, Kotlin o Flutter." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desarrollo de plataformas web", "description": "Aplicaciones web, e-commerce, SaaS y portales con React, Next.js y Node.js." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentes de voz con Inteligencia Artificial", "description": "Sistemas conversacionales con IA para soporte, ventas y automatización 24/7." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas de gestión y software SaaS a medida", "description": "Software para clínicas, RRHH, automotriz, inmobiliaria y operaciones internas." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landing pages de conversión", "description": "Páginas rápidas optimizadas para SEO y conversión." } }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué servicios ofrece Bryan Marc?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Desarrollo de aplicaciones móviles (React Native, Kotlin, Flutter), plataformas web (React, Next.js, Node.js), agentes de voz con Inteligencia Artificial (OpenAI, Twilio), software SaaS a medida y landing pages de conversión con SEO." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Dónde está ubicado y para quién trabaja?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Está en Puerto Plata, República Dominicana, y trabaja con startups y empresas en República Dominicana, España, Argentina y el resto del mundo, de forma remota." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo puedo contratar o contactar a Bryan Marc?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Por WhatsApp al +1 829 494 6176 o por email a bmarcenlinea@gmail.com. Responde en menos de 24 horas con una propuesta sin compromiso." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué tecnologías domina?",
+          "acceptedAnswer": { "@type": "Answer", "text": "React Native, Kotlin, Flutter, React, Next.js, TypeScript, Node.js, MongoDB, PostgreSQL, Firebase, GraphQL, Voice AI, OpenAI, Twilio, Unity, C# y Docker." }
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/environments/RoomEnvironment.js"></script>
+    <style>
+        :root {
+            /* Paleta Apple (dark) */
+            --cyan:   #2997ff;   /* azul Apple — acento principal */
+            --purple: #5e9eff;   /* azul Apple suave */
+            --teal:   #64d2ff;   /* cyan Apple claro */
+            --white:  #f5f5f7;   /* texto principal Apple */
+            --muted:  #aeb6c4;   /* gris secundario — legible (WCAG AAA sobre negro) */
+            --font:   "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: auto; }
+        body {
+            font-family: var(--font);
+            background: #000;
+            color: var(--white);
+            overflow-x: hidden;
+            letter-spacing: -0.015em;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "kern" 1;
+        }
+        #bg {
+            position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: 0; pointer-events: none;
+        }
+        #root { position: relative; z-index: 10; }
+        #root > * { pointer-events: none; }
+        a, button, input, textarea, .click { pointer-events: all; }
+
+        /* VIAJE INMERSIVO */
+        #journey { position: relative; height: 560vh; }
+        .journey-sticky {
+            position: sticky; top: 0; height: 100vh;
+            display: flex; align-items: center; justify-content: center;
+            pointer-events: none; overflow: hidden;
+        }
+        .beat {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            text-align: center; padding: 0 2rem; opacity: 0; width: 92%; max-width: 920px; will-change: opacity;
+        }
+        .beat h2 {
+            font-size: clamp(2.2rem, 6.2vw, 5.2rem); font-weight: 600; letter-spacing: -.055em; line-height: 1.02; color: #fff;
+            text-shadow: 0 2px 24px rgba(0,0,0,.85), 0 0 60px rgba(0,0,0,.7);
+        }
+        .beat .acc { color: var(--cyan); }
+        .beat p {
+            margin-top: 1.3rem; font-size: .78rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #cfd6e6;
+            text-shadow: 0 2px 16px rgba(0,0,0,.9);
+        }
+        /* beat del nombre — abajo a la izquierda, estilo créditos */
+        .beat-me { top: auto; bottom: 13%; left: 7%; transform: none; text-align: left; width: auto; max-width: 640px; }
+        .beat-kicker { font-size: .82rem !important; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--cyan) !important; margin: 0 0 .5rem !important; text-shadow: 0 2px 14px rgba(0,0,0,.9); }
+        .beat-name {
+            font-size: clamp(3rem, 9vw, 7rem) !important; font-weight: 700 !important; line-height: .92 !important; letter-spacing: -.05em;
+            background: linear-gradient(110deg, #ffffff 0%, #bcd8ff 55%, var(--cyan) 100%);
+            -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;
+            text-shadow: 0 8px 40px rgba(0,0,0,.6); filter: drop-shadow(0 4px 30px rgba(0,0,0,.55));
+        }
+        .beat-role { margin-top: 1rem !important; font-size: .9rem !important; letter-spacing: .06em !important; text-transform: none !important; color: #dfe6f5 !important; }
+        @media (max-width:600px){ .beat-me { left: 6%; bottom: 16%; } }
+
+        /* INTRO — fade del negro inicial */
+        #intro-black { position: fixed; inset: 0; background: #000; z-index: 300; pointer-events: none; }
+        #intro-flash {
+            position: fixed; inset: 0; z-index: 301; opacity: 0; pointer-events: none;
+            background: radial-gradient(circle at 50% 48%, rgba(255,244,214,.95), rgba(255,207,143,.55) 38%, rgba(255,180,90,0) 72%);
+        }
+        #intro-skip {
+            position: fixed; bottom: 1.5rem; right: 1.75rem; z-index: 305;
+            font-family: var(--font); font-size: .6rem; font-weight: 600;
+            letter-spacing: .16em; text-transform: uppercase;
+            color: rgba(255,255,255,.4); background: none; border: none;
+            cursor: pointer; pointer-events: all; transition: color .3s;
+        }
+        #intro-skip:hover { color: #fff; }
+        /* barras de cine + viñeta */
+        .cine-bar { position: fixed; left: 0; width: 100%; height: 12%; background: #000; z-index: 303; pointer-events: none; }
+        #cine-top { top: 0; } #cine-bot { bottom: 0; }
+        #cine-vig {
+            position: fixed; inset: 0; z-index: 302; pointer-events: none;
+            background: radial-gradient(ellipse at 50% 50%, transparent 38%, rgba(0,0,0,.55) 100%);
+        }
+
+        /* NAV */
+        nav {
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 200;
+            padding: .9rem 2.5rem;
+            display: flex; align-items: center; justify-content: space-between;
+            background: rgba(0,0,12,.72);
+            backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(255,255,255,.055);
+            pointer-events: all;
+        }
+        .nav-logo { font-size: .9rem; font-weight: 600; color: #fff; text-decoration: none; letter-spacing: -.03em; }
+        .nav-logo span { color: var(--cyan); }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { font-size: .77rem; color: var(--muted); text-decoration: none; transition: color .3s; }
+        .nav-links a:hover { color: #fff; }
+        .nav-cta {
+            font-size: .77rem; font-weight: 600; color: #000; background: var(--cyan);
+            padding: .42rem 1.1rem; border-radius: 999px; text-decoration: none; transition: opacity .2s;
+        }
+        .nav-cta:hover { opacity: .82; }
+        .nav-right { display: flex; align-items: center; gap: .6rem; }
+        .lang-toggle {
+            font-family: var(--font); font-size: .72rem; font-weight: 700; letter-spacing: .06em;
+            color: var(--white); background: rgba(255,255,255,.07);
+            border: 1px solid rgba(255,255,255,.16); padding: .4rem .62rem;
+            border-radius: 999px; cursor: pointer; transition: background .2s, border-color .2s;
+        }
+        .lang-toggle:hover { background: rgba(255,255,255,.16); border-color: var(--cyan); }
+
+        /* HERO */
+        #hero {
+            min-height: 100vh;
+            display: flex; flex-direction: column; justify-content: flex-end;
+            padding: 0 2.5rem 4rem;
+        }
+        .hero-content { display: flex; justify-content: space-between; align-items: flex-end; }
+        .hero-badge {
+            display: inline-block; margin-bottom: 1.5rem;
+            font-size: .63rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
+            color: var(--cyan); border: 1px solid rgba(41,151,255,.3);
+            padding: .3rem .8rem; border-radius: 999px; opacity: 0;
+        }
+        .hero-title {
+            font-size: clamp(3.8rem, 11vw, 10.5rem);
+            font-weight: 600; line-height: .87; letter-spacing: -.055em; color: #fff;
+        }
+        .hero-title .line { overflow: hidden; display: block; }
+        .hero-title .word { display: block; transform: translateY(112%); }
+        .hero-title .accent { color: var(--cyan); }
+        .hero-right { max-width: 310px; padding-bottom: .5rem; opacity: 0; transform: translateY(20px); }
+        .hero-sub { font-size: .88rem; color: var(--muted); line-height: 1.65; margin-bottom: 1.5rem; }
+        .btn {
+            display: inline-flex; align-items: center; gap: .45rem;
+            background: var(--cyan); color: #000;
+            font-family: var(--font); font-size: .82rem; font-weight: 600;
+            padding: .7rem 1.6rem; border-radius: 999px;
+            text-decoration: none; border: none; cursor: pointer;
+            transition: background .2s, box-shadow .2s;
+        }
+        .btn:hover { background: #fff; box-shadow: 0 0 30px rgba(41,151,255,.35); }
+        .hero-scroll {
+            position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+            display: flex; flex-direction: column; align-items: center; gap: .5rem;
+            color: rgba(255,255,255,.28); font-size: .58rem; letter-spacing: .14em; text-transform: uppercase;
+            opacity: 0;
+        }
+        .scroll-line {
+            width: 1px; height: 48px;
+            background: linear-gradient(to bottom, var(--cyan), transparent);
+            animation: spulse 2s ease-in-out infinite;
+        }
+        @keyframes spulse { 0%,100%{opacity:.3;transform:scaleY(1)} 50%{opacity:1;transform:scaleY(.5)} }
+
+        /* MARQUEE */
+        .mq-wrap {
+            border-top: 1px solid rgba(255,255,255,.05);
+            border-bottom: 1px solid rgba(255,255,255,.05);
+            padding: .9rem 0; overflow: hidden;
+            background: rgba(0,0,12,.5);
+        }
+        .mq-track { display: flex; gap: 2.5rem; width: max-content; animation: marquee 30s linear infinite; }
+        @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+        .mi {
+            font-size: .63rem; font-weight: 600; letter-spacing: .12em;
+            text-transform: uppercase; color: var(--muted); white-space: nowrap;
+            display: flex; align-items: center; gap: 2rem;
+        }
+        .md { width: 3px; height: 3px; border-radius: 50%; background: var(--cyan); display: inline-block; }
+
+        /* SECTION LABEL */
+        .lbl {
+            font-size: .6rem; font-weight: 600; letter-spacing: .18em;
+            text-transform: uppercase; color: var(--cyan); display: block; margin-bottom: .8rem;
+        }
+
+        /* SECTION BASE */
+        .section { min-height: 100vh; padding: 8rem 2.5rem; display: flex; align-items: center; }
+        .si { max-width: 1200px; width: 100%; margin: 0 auto; }
+
+        /* ARCHITECTURE */
+        .arch-hdr { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 4rem; }
+        .arch-title { font-size: clamp(2.5rem,5vw,4.5rem); font-weight: 600; line-height: 1; letter-spacing: -.055em; }
+        .arch-title .dim { color: var(--muted); }
+        .arch-desc { display: flex; flex-direction: column; justify-content: flex-end; }
+        .arch-desc p { font-size: 1rem; line-height: 1.7; color: var(--muted); }
+        .arch-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; }
+        .arch-card {
+            padding: 2.5rem; background: rgba(4,4,18,.72);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,.07);
+            position: relative; overflow: hidden; transition: background .3s;
+        }
+        .arch-card:hover { background: rgba(8,8,30,.82); }
+        .arch-card::before {
+            content:''; position:absolute; top:0; left:0; right:0; height:1px;
+            background: var(--cyan); transform:scaleX(0); transform-origin:left; transition:transform .5s;
+        }
+        .arch-card:hover::before { transform:scaleX(1); }
+        .arch-num { font-size:.6rem; font-weight:600; letter-spacing:.15em; color:var(--cyan); margin-bottom:1.5rem; }
+        .arch-card h3 { font-size:1.05rem; font-weight:600; color:#fff; margin-bottom:.6rem; letter-spacing:-.03em; }
+        .arch-card p { font-size:.8rem; line-height:1.65; color:var(--muted); }
+        .tags { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:1.25rem; }
+        .tag {
+            font-size:.6rem; font-weight:600; color:var(--muted);
+            background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1);
+            padding:.22rem .55rem; border-radius:999px;
+            font-family:ui-monospace, SFMono-Regular, monospace;
+        }
+
+        /* STICKY PROJECTS */
+        .sticky-wrap { height: 400vh; position: relative; }
+        .sticky-inner { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+        .panel {
+            position: absolute; inset: 0;
+            display: flex; align-items: flex-end; padding: 3rem;
+            opacity: 0; pointer-events: none; transition: opacity .8s;
+        }
+        .panel.active { opacity: 1; pointer-events: all; }
+        .panel-bg {
+            position: absolute; inset: 0;
+            background-size: cover; background-position: center;
+            transform: scale(1.08); transition: transform 1.3s cubic-bezier(.16,1,.3,1);
+        }
+        .panel.switching .panel-bg { animation: screenSwitch .55s ease-out; }
+        @keyframes screenSwitch {
+            0%   { filter: brightness(2.6) saturate(.3); transform: scale(1.08) translateX(10px); clip-path: inset(45% 0 45% 0); }
+            18%  { clip-path: inset(0 0 62% 0); transform: scale(1.08) translateX(-8px); }
+            36%  { clip-path: inset(58% 0 0 0); transform: scale(1.08) translateX(5px); filter: brightness(1.5) saturate(.6); }
+            60%  { clip-path: inset(20% 0 30% 0); transform: scale(1.05) translateX(-3px); }
+            100% { filter: none; transform: scale(1) translateX(0); clip-path: inset(0 0 0 0); }
+        }
+        .panel.active .panel-bg { transform: scale(1); }
+        .panel-ov { position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,12,.96) 25%, rgba(0,0,12,.25) 70%); }
+        .panel-info { position:relative; z-index:5; display:flex; justify-content:space-between; align-items:flex-end; width:100%; }
+        .p-cat { font-size:.6rem; letter-spacing:.18em; text-transform:uppercase; color:var(--cyan); margin-bottom:.5rem; }
+        .p-title { font-size:clamp(2rem,5vw,4rem); font-weight:600; letter-spacing:-.055em; margin-bottom:.6rem; }
+        .p-desc { font-size:.85rem; color:rgba(255,255,255,.6); max-width:480px; line-height:1.62; }
+        .p-counter { font-size:5rem; font-weight:600; letter-spacing:-.06em; color:rgba(255,255,255,.05); line-height:1; }
+        .p-link {
+            display:inline-flex; align-items:center; gap:.4rem;
+            font-size:.82rem; font-weight:600; color:#000;
+            background:var(--cyan); padding:.65rem 1.4rem; border-radius:999px;
+            text-decoration:none; transition:background .3s; margin-top:.85rem;
+        }
+        .p-link:hover { background:#fff; }
+        .p-link.off { opacity:.4; pointer-events:none; background:rgba(255,255,255,.12); color:#fff; }
+        .panel-nav {
+            position:absolute; right:2.5rem; top:50%; transform:translateY(-50%);
+            display:flex; flex-direction:column; gap:.6rem; z-index:20; pointer-events:all;
+        }
+        .pdot { width:6px; height:6px; border-radius:3px; background:rgba(255,255,255,.2); cursor:pointer; transition:background .3s, height .3s; }
+        .pdot.on { background:var(--cyan); height:20px; }
+
+        /* PROJECTS GRID */
+        .grid-section { padding: 6rem 2.5rem; }
+        .grid-hdr { max-width:1200px; margin:0 auto 2rem; display:flex; justify-content:space-between; align-items:flex-end; }
+        .grid-hdr h2 { font-size:clamp(1.4rem,2.5vw,2rem); font-weight:600; letter-spacing:-.04em; }
+        .gprojects {
+            display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+            gap:1px; max-width:1200px; margin:0 auto;
+            border:1px solid rgba(255,255,255,.07); border-radius:1.5rem; overflow:hidden;
+        }
+        .gp {
+            background:rgba(4,4,18,.75); padding:1.5rem; text-decoration:none; color:var(--white);
+            display:block; transition:background .25s; cursor:pointer;
+            border-right:1px solid rgba(255,255,255,.06); border-bottom:1px solid rgba(255,255,255,.06);
+        }
+        .gp:hover { background:rgba(10,10,30,.9); }
+        .gp-num { font-size:.58rem; font-weight:600; letter-spacing:.12em; color:var(--muted); margin-bottom:.8rem; font-family:ui-monospace,monospace; }
+        .gp h3 { font-size:.92rem; font-weight:600; letter-spacing:-.03em; margin-bottom:.25rem; }
+        .gp p { font-size:.7rem; color:var(--muted); }
+        .gp-arr { display:block; margin-top:.8rem; font-size:.9rem; color:var(--cyan); transition:transform .3s; }
+        .gp:hover .gp-arr { transform:translate(3px,-3px); }
+
+        /* STATS */
+        .stats-grid {
+            display:grid; grid-template-columns:repeat(4,1fr); gap:1px; margin-top:3rem;
+            border:1px solid rgba(255,255,255,.07); border-radius:1.5rem; overflow:hidden;
+        }
+        .stat-item { padding:3.5rem 2.5rem; background:rgba(4,4,18,.75); border-right:1px solid rgba(255,255,255,.06); }
+        .stat-item:last-child { border-right:none; }
+        .stat-num { font-size:clamp(3rem,5vw,5rem); font-weight:600; letter-spacing:-.055em; line-height:1; margin-bottom:.5rem; }
+        .stat-suf { color:var(--cyan); }
+        .stat-lbl { font-size:.78rem; color:var(--muted); line-height:1.5; }
+
+        /* SERVICES — presentación que cambia de color al scroll */
+        #servicios { position: relative; }
+        .svc-stage {
+            position: sticky; top: 0; height: 100vh; z-index: 0;
+            background-color: #0a1230; will-change: background-color;
+        }
+        .svc-flow { position: relative; z-index: 1; margin-top: -100vh; }
+        .svc-intro {
+            min-height: 82vh; display: flex; flex-direction: column; justify-content: center;
+            max-width: 1100px; margin: 0 auto; padding: 8rem 2.5rem 2rem;
+        }
+        .svc-title-xl { font-size: clamp(3.4rem, 9.5vw, 7.2rem); font-weight: 700; letter-spacing: -.055em; line-height: .98; margin: .5rem 0 1.6rem; color: #fff; text-shadow: 0 4px 30px rgba(0,0,0,.5); }
+        .svc-title-xl .acc { color: var(--cyan); }
+        .svc-intro-sub { font-size: clamp(1.3rem, 2vw, 1.75rem); line-height: 1.5; color: #fff; max-width: 700px; }
+        .svc-scroll-hint { margin-top: 2.4rem; font-size: .82rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--cyan); }
+        .svc-panel {
+            min-height: 100vh; display: flex; align-items: center;
+            padding: 6rem 2.5rem; text-decoration: none; color: #fff;
+            border-top: 1px solid rgba(255,255,255,.06);
+        }
+        .svc-panel-in { max-width: 1100px; width: 100%; margin: 0 auto; }
+        .svc-tag { display: inline-block; font-size: .95rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--cyan); margin-bottom: 1.5rem; text-shadow: 0 2px 14px rgba(0,0,0,.6); }
+        .svc-big { font-size: clamp(3.5rem, 10vw, 7.8rem); font-weight: 700; letter-spacing: -.055em; line-height: .98; color: #fff; margin-bottom: 1.9rem; text-shadow: 0 6px 36px rgba(0,0,0,.55); }
+        .svc-lead { font-size: clamp(1.4rem, 2.3vw, 2.05rem); line-height: 1.45; color: #fff; max-width: 720px; margin-bottom: 2.7rem; text-shadow: 0 2px 20px rgba(0,0,0,.5); }
+        .svc-cta-btn {
+            display: inline-flex; align-items: center; gap: .5rem;
+            font-size: 1.02rem; font-weight: 600; color: #06060e; background: #fff;
+            padding: .95rem 2.1rem; border-radius: 999px; transition: transform .3s, box-shadow .3s;
+        }
+        .svc-panel:hover .svc-cta-btn { transform: translateX(6px); box-shadow: 0 0 40px rgba(255,255,255,.28); }
+        .svc-outro { text-align: center; }
+        .svc-outro .svc-panel-in { display: flex; flex-direction: column; align-items: center; }
+        .btn-lg { font-size: 1.05rem; padding: 1.05rem 2.5rem; }
+
+        /* ABOUT */
+        .about-inner { display:grid; grid-template-columns:1fr 1.4fr; gap:6rem; align-items:center; }
+        .about-img-wrap {
+            position:relative; aspect-ratio:3/4; overflow:hidden; border-radius:2rem;
+            border:1px solid rgba(255,255,255,.08);
+        }
+        .about-img-wrap img { width:100%; height:100%; object-fit:cover; object-position:center top; transition:transform .6s; }
+        .about-img-wrap:hover img { transform:scale(1.03); }
+        .about-ov {
+            position:absolute; bottom:0; left:0; right:0; padding:1.25rem;
+            background:linear-gradient(to top, rgba(0,0,0,.7), transparent);
+        }
+        .about-ov p:first-child { font-size:.63rem; color:rgba(255,255,255,.8); font-weight:600; letter-spacing:.12em; text-transform:uppercase; }
+        .about-ov p:last-child { font-size:.75rem; color:rgba(255,255,255,.5); margin-top:.2rem; }
+        .about-title { font-size:clamp(1.8rem,3vw,2.8rem); font-weight:600; letter-spacing:-.055em; line-height:1.05; margin-bottom:1.25rem; }
+        .about-body { font-size:.95rem; line-height:1.72; color:var(--muted); margin-bottom:2rem; }
+        .about-links { display:flex; gap:1.5rem; margin-top:2rem; }
+        .about-links a { font-size:.82rem; color:var(--muted); text-decoration:none; transition:color .3s; }
+        .about-links a:hover { color:#fff; }
+        .about-links .c { color:var(--cyan); }
+
+        /* TESTIMONIALS */
+        .testi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; margin-top:3rem; }
+        .testi-card {
+            padding:2.5rem; border-radius:1.5rem;
+            background:rgba(4,4,18,.75); border:1px solid rgba(255,255,255,.07);
+        }
+        .testi-q { font-size:.88rem; line-height:1.72; color:var(--muted); margin-bottom:2rem; }
+        .testi-name { font-size:.82rem; font-weight:600; }
+        .testi-role { font-size:.7rem; color:var(--muted); margin-top:.2rem; }
+
+        /* PHILOSOPHY */
+        #filosofia { min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:8rem 2.5rem; text-align:center; }
+        .philo-text { font-size:clamp(2.5rem,6.5vw,6.5rem); font-weight:600; letter-spacing:-.055em; line-height:.92; max-width:1000px; margin:1rem auto 0; }
+        .philo-text .outline { color:transparent; -webkit-text-stroke:1px rgba(255,255,255,.18); }
+        .philo-sub { margin-top:2.5rem; color:var(--muted); font-size:.9rem; line-height:1.7; max-width:420px; }
+
+        /* CONTACT */
+        .contact-inner { display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:start; }
+        .contact-title { font-size:clamp(2.8rem,5.5vw,5rem); font-weight:600; letter-spacing:-.055em; line-height:1; margin-bottom:1.25rem; }
+        .contact-title .acc { color:var(--cyan); }
+        .contact-sub { font-size:.88rem; color:var(--muted); line-height:1.7; max-width:380px; }
+        .ci-grid { margin-top:2.5rem; }
+        .ci-row { display:flex; justify-content:space-between; padding:1rem 0; border-top:1px solid rgba(255,255,255,.07); font-size:.84rem; }
+        .ci-row:last-child { border-bottom:1px solid rgba(255,255,255,.07); }
+        .ci-row span:first-child { color:var(--muted); }
+        .ci-row a { color:var(--cyan); text-decoration:none; }
+        .soc-links { display:flex; gap:1.25rem; margin-top:1.5rem; }
+        .soc-links a { font-size:.8rem; color:var(--muted); text-decoration:none; transition:color .3s; }
+        .soc-links a:hover { color:#fff; }
+
+        /* TERMINAL */
+        .terminal { background:#040408; border:1px solid rgba(255,255,255,.08); border-radius:14px; overflow:hidden; }
+        .term-bar { padding:.7rem 1rem; background:#0a0a0f; border-bottom:1px solid rgba(255,255,255,.06); display:flex; align-items:center; gap:.4rem; }
+        .tdot { width:11px; height:11px; border-radius:50%; }
+        .term-bar-title { font-size:.65rem; color:rgba(255,255,255,.22); margin:0 auto; font-family:ui-monospace,monospace; }
+        .term-body { padding:1.35rem; font-family:ui-monospace,monospace; font-size:.8rem; min-height:280px; }
+        .tl { display:flex; gap:.4rem; margin-bottom:.4rem; color:rgba(255,255,255,.38); }
+        .tp { color:var(--cyan); flex-shrink:0; }
+        .tok { color:#28C840; }
+        .cursor-blink { display:inline-block; width:7px; height:13px; background:var(--cyan); animation:blink 1s step-end infinite; vertical-align:middle; margin-left:2px; }
+        @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+        #tform { display:none; margin-top:.75rem; }
+        .tf { display:flex; align-items:flex-start; gap:.4rem; margin-bottom:.6rem; }
+        .ti { background:transparent; border:none; outline:none; color:#fff; font-family:inherit; font-size:inherit; flex:1; caret-color:var(--cyan); }
+        .tta { background:transparent; border:none; outline:none; color:#fff; font-family:inherit; font-size:inherit; flex:1; resize:none; min-height:56px; caret-color:var(--cyan); }
+        .tsend { background:var(--cyan); color:#000; border:none; font-family:var(--font); font-size:.8rem; font-weight:600; padding:.5rem 1.25rem; border-radius:8px; cursor:pointer; margin-top:.6rem; transition:opacity .2s; }
+        .tsend:hover { opacity:.8; }
+        #tsuccess { display:none; }
+
+        /* FOOTER */
+        footer {
+            padding:1.75rem 2.5rem; border-top:1px solid rgba(255,255,255,.06);
+            display:flex; justify-content:space-between; align-items:center;
+            font-size:.72rem; color:var(--muted); pointer-events:all;
+        }
+        .foot-logo { font-size:.82rem; font-weight:600; color:#fff; }
+        .foot-links { display:flex; gap:1.5rem; }
+        .foot-links a { color:var(--muted); text-decoration:none; transition:color .3s; }
+        .foot-links a:hover { color:#fff; }
+
+        /* RESPONSIVE */
+        @media (max-width:960px) {
+            .nav-links { display:none; }
+            .hero-content { flex-direction:column; align-items:flex-start; gap:2rem; }
+            .arch-hdr, .svc-hdr, .contact-inner { grid-template-columns:1fr; gap:2rem; }
+            .arch-cards { grid-template-columns:1fr; }
+            .stats-grid { grid-template-columns:1fr 1fr; }
+            .testi-grid { grid-template-columns:1fr; }
+            .about-inner { grid-template-columns:1fr; }
+            .svc-row { grid-template-columns:60px 1fr auto; }
+            .svc-desc { display:none; }
+        }
+        @media (max-width:600px) {
+            nav { padding:1rem 1.25rem; }
+            .section, #hero, .grid-section, #filosofia { padding-left:1.25rem; padding-right:1.25rem; }
+            .stats-grid { grid-template-columns:1fr 1fr; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Loader -->
-    <div class="loader-wrapper">
-        <div class="loader"></div>
-    </div>
 
-    <!-- Cursor personalizado -->
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
+<canvas id="bg"></canvas>
+<div id="intro-black"></div>
 
-    <!-- Navegación -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="logo">
-                <a href="#" class="logo-text">Bryan<span>Dev</span></a>
-            </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#hero" class="nav-link active">Inicio</a></li>
-                <li><a href="#projects" class="nav-link">Proyectos</a></li>
-                <li><a href="#testimonials" class="nav-link">Testimonios</a></li>
-                <li><a href="#about" class="nav-link">Sobre mí</a></li>
-                <li><a href="#contact" class="nav-link">Contacto</a></li>
-            </ul>
+<div id="root">
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <a href="#" class="nav-logo">Bryan Marc<span>.Dev</span></a>
+        <ul class="nav-links">
+            <li><a href="#servicios" data-en="Services">Servicios</a></li>
+            <li><a href="#proyectos" data-en="Projects">Proyectos</a></li>
+            <li><a href="#arquitectura" data-en="Architecture">Arquitectura</a></li>
+            <li><a href="#sobre-mi" data-en="About">Sobre mí</a></li>
+            <li><a href="#contacto" data-en="Contact">Contacto</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="https://wa.me/18294946176" target="_blank" rel="noopener" class="nav-cta" data-en="Let's talk →">Hablemos →</a>
+            <button id="langToggle" class="lang-toggle" aria-label="Language / Idioma">EN</button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero" data-scroll-section>
-        <!-- Particles Background -->
-        <div id="particles-js"></div>
-
-        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-            <!-- Badge de especialidad -->
-            <div class="hero-badge" data-aos="fade-down" data-aos-delay="200">
-               
-                <span>Desarrollador Full-Stack Disponible</span>
+    <!-- VIAJE INMERSIVO (controlado por scroll) -->
+    <section id="journey">
+        <div class="journey-sticky">
+            <div class="beat" data-start="0.0"  data-end="0.16"><h2 data-en="It all starts<br>with an <span class='acc'>idea</span>.">Todo empieza<br>con una <span class="acc">idea</span>.</h2><p data-en="Scroll ↓">Desliza ↓</p></div>
+            <div class="beat" data-start="0.18" data-end="0.40"><h2 data-en="That sparks<br>and takes shape.">Que se enciende<br>y toma forma.</h2></div>
+            <div class="beat" data-start="0.46" data-end="0.72"><h2 data-en="And becomes a<br><span class='acc'>real product</span>.">Y se vuelve<br><span class="acc">producto real</span>.</h2><p data-en="Scroll through my projects →">Desliza para recorrer mis proyectos →</p></div>
+            <div class="beat beat-me" data-start="0.78" data-end="0.99">
+                <p class="beat-kicker" data-en="Hi, I'm">Hola, soy</p>
+                <h2 class="beat-name">Bryan&nbsp;Marc</h2>
+                <p class="beat-role" data-en="Full-Stack Developer — Mobile apps, web platforms &amp; Artificial Intelligence">Desarrollador Full-Stack — Apps móviles, plataformas web e Inteligencia Artificial</p>
             </div>
-
-            <h1 class="title reveal-text">
-                Transformo Ideas en
-                <span class="title-highlight">Aplicaciones Exitosas</span>
-            </h1>
-
-            <div class="subtitle-container">
-                <p class="hero-description reveal-text delay-1">
-                    Ingeniero de Software especializado en <strong>React Native</strong>, <strong>Android</strong> y <strong>Web Development</strong>.
-                    Creo soluciones digitales que generan resultados reales para empresas y startups.
-                </p>
-            </div>
-
-            <!-- Stats rápidos -->
-            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
-                <div class="stat-item">
-                    <span class="stat-number">15+</span>
-                    <span class="stat-label">Proyectos Completados</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">8+</span>
-                    <span class="stat-label">Clientes Satisfechos</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Código de Calidad</span>
-                </div>
-            </div>
-
-            <div class="cta-container reveal-item delay-3">
-                <a href="#contact" class="cta-button primary">
-                    <span>Trabajemos Juntos</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#projects" class="cta-button outline">
-                    <span>Ver Mi Trabajo</span>
-                </a>
-            </div>
-
-            <!-- Tecnologías principales -->
-            <div class="hero-tech" data-aos="fade-up" data-aos-delay="600">
-                <span class="tech-label">Especializado en:</span>
-                <div class="tech-icons">
-                    <span class="tech-tag">React Native</span>
-                    <span class="tech-tag">Kotlin</span>
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">MongoDB</span>
-                    <span class="tech-tag">Node.js</span>
-                </div>
-            </div>
-        </div>
-
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects section-dark" data-scroll-section>
-        <div class="container">
-            <!-- Badge de sección -->
-            <div class="section-badge" data-aos="fade-down">
-                <span class="badge-number">15+</span>
-                <span class="badge-text">Proyectos Completados con Éxito</span>
-            </div>
+    <div id="webstart">
 
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Proyectos Que Generan Resultados</h2>
-                <p class="section-subtitle">Aplicaciones móviles y web que resuelven problemas reales</p>
+    <!-- HERO -->
+    <section id="hero" style="position:relative;">
+        <div class="hero-content">
+            <div>
+                <span class="hero-badge">Full Stack Developer · Puerto Plata, RD</span>
+                <h1 class="hero-title">
+                    <span class="line"><span class="word" data-en="I BUILD">CONSTRUYO</span></span>
+                    <span class="line"><span class="word" data-en="DIGITAL">EXPERIENCIAS</span></span>
+                    <span class="line"><span class="word accent" data-en="EXPERIENCES">DIGITALES</span></span>
+                </h1>
             </div>
-        
-        <div class="projects-grid">
-            <!-- Nuevo proyecto: MeloView App -->
-            <div class="project-card reveal-item">
-                <div class="project-image">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-03-20%20203002-dicFz8SxFjP5D1EeWQKVZQ89cZHCfu.png" alt="MeloView App">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">Kotlin</span>
-                        <span class="tag">Android</span>
-                        <span class="tag">Firebase</span>
-                    </div>
-                    <h3 class="project-title">MeloView - Streaming App</h3>
-                    <p class="project-description">Aplicación de streaming de contenido multimedia desarrollada con Kotlin para Android. Permite a los usuarios explorar y reproducir películas y series de diferentes plataformas.</p>
-                    <a href="#" class="project-button private-project">Ver Detalles</a>
-                </div>
-            </div>
-
-            <!-- Nuevo proyecto: I AM MUSIC App -->
-            <div class="project-card reveal-item delay-1">
-                <div class="project-image">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lc0wWK63aBjZmy97QCzLtQr0XqLm8H.png" alt="I AM MUSIC App">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">Kotlin</span>
-                        <span class="tag">Android</span>
-                        <span class="tag">API REST</span>
-                    </div>
-                    <h3 class="project-title">I AM MUSIC - Streaming de Música</h3>
-                    <p class="project-description">Aplicación de streaming de música tipo Spotify desarrollada con Kotlin. Permite explorar artistas populares, reproducir música y gestionar suscripciones.</p>
-                    <a href="#" class="project-button private-project">Ver Detalles</a>
-                </div>
-            </div>
-
-            <!-- AppMyPets - Proyecto Profesional -->
-            <div class="project-card reveal-item delay-2">
-                <div class="project-image">
-                    <img src="https://appmypets.es/wp-content/uploads/elementor/thumbs/appmypets-logo-verdeingles-r9ioia6676dq05fgbhq0jsyq769eafyubwf2dptlog.png" alt="AppMyPets">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://appmypets.es" class="project-link" target="_blank"><i class="fas fa-eye"></i></a>
-                            <a href="https://appmypets.es" class="project-link" target="_blank"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">React Native</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">React</span>
-                    </div>
-                    <h3 class="project-title">AppMyPets - Aplicación Móvil</h3>
-                    <p class="project-description">Aplicación móvil profesional para la gestión y cuidado de mascotas. Desarrollo full-stack utilizando React Native para el frontend móvil, React para el panel web, MongoDB como base de datos y TypeScript para garantizar código robusto y mantenible.</p>
-                    <a href="https://appmypets.es" target="_blank" class="project-button">Ver Detalles</a>
-                </div>
-            </div>
-
-            <div class="project-card reveal-item">
-                <div class="project-image">
-                    <img src="https://c3sbqxalf1fdk2fd.public.blob.vercel-storage.com/1-Mff0wRcSVXWdH4cfYeJNCzSHTgw1xU.png" alt="Proyecto 1">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                            <a href="https://github.com/BryanMarc01/stickyNotes-For-Android" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">Android Studio</span>
-                        <span class="tag">Java</span>
-
-                    </div>
-                    <h3 class="project-title">stickyNotes For Android </h3>
-                    <p class="project-description">stickyNotes for Android This is the Final Proyect of my University(UTESA) using Android Studio with Java.</p>
-                    <a href="https://github.com/BryanMarc01/stickyNotes-For-Android" class="project-button">Ver Detalles</a>
-                </div>
-            </div>
-  <!-- Ammunation -->
-    <div class="project-card reveal-item delay">
-        <div class="project-image">
-            <img src="https://c3sbqxalf1fdk2fd.public.blob.vercel-storage.com/4-n4B0uxD063WhXkk5MP4kieXu8cAaym.png" alt="Ammunation">
-            <div class="project-overlay">
-                <div class="project-links">
-                    <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                    <a href="https://github.com/BryanMarc01/Ammunation" class="project-link"><i class="fab fa-github"></i></a>
-                </div>
+            <div class="hero-right">
+                <p class="hero-sub" data-en="Mobile apps, web platforms and AI systems that grow real businesses across multiple countries.">Aplicaciones móviles, plataformas web y sistemas de IA que hacen crecer empresas reales en múltiples países.</p>
+                <a href="#servicios" class="btn" data-en="Start a project →">Consultar un proyecto →</a>
             </div>
         </div>
-        <div class="project-content">
-            <div class="project-tags">
-                <span class="tag">Docker</span><span class="tag">Travis</span><span class="tag">React</span>
-            </div>
-            <h3 class="project-title">Ammunation</h3>
-            <p class="project-description">Practice project to learn cron jobs, Kubernetes, BFF patterns, Travis CI and Docker.</p>
-            <a href="https://github.com/BryanMarc01/Ammunation" class="project-button">Ver Detalles</a>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>scroll</span>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="mq-wrap">
+        <div class="mq-track">
+            <span class="mi">React Native <span class="md"></span></span><span class="mi">Kotlin <span class="md"></span></span>
+            <span class="mi">TypeScript <span class="md"></span></span><span class="mi">Node.js <span class="md"></span></span>
+            <span class="mi">MongoDB <span class="md"></span></span><span class="mi">Next.js <span class="md"></span></span>
+            <span class="mi">Flutter <span class="md"></span></span><span class="mi">Firebase <span class="md"></span></span>
+            <span class="mi">PostgreSQL <span class="md"></span></span><span class="mi">Voice AI <span class="md"></span></span>
+            <span class="mi">Docker <span class="md"></span></span><span class="mi">Unity / C# <span class="md"></span></span>
+            <span class="mi">Three.js <span class="md"></span></span><span class="mi">GraphQL <span class="md"></span></span>
+            <span class="mi">React Native <span class="md"></span></span><span class="mi">Kotlin <span class="md"></span></span>
+            <span class="mi">TypeScript <span class="md"></span></span><span class="mi">Node.js <span class="md"></span></span>
+            <span class="mi">MongoDB <span class="md"></span></span><span class="mi">Next.js <span class="md"></span></span>
+            <span class="mi">Flutter <span class="md"></span></span><span class="mi">Firebase <span class="md"></span></span>
+            <span class="mi">PostgreSQL <span class="md"></span></span><span class="mi">Voice AI <span class="md"></span></span>
+            <span class="mi">Docker <span class="md"></span></span><span class="mi">Unity / C# <span class="md"></span></span>
+            <span class="mi">Three.js <span class="md"></span></span><span class="mi">GraphQL <span class="md"></span></span>
         </div>
     </div>
 
-    <!-- Tablero de Planes -->
-    <div class="project-card reveal-item delay-2">
-        <div class="project-image">
-            <img src="https://gckozzktsf1a4yem.public.blob.vercel-storage.com/planees-SW5eaOzRJpklCSJogWBwx8sYvuB295.png" alt="Tablero de Planes">
-            <div class="project-overlay">
-                <div class="project-links">
-                    <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                    <a href="https://board-kappa-seven.vercel.app/" class="project-link"><i class="fab fa-sistrix"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="project-content">
-            <div class="project-tags">
-                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Middleware</span><span class="tag">JavaScript</span><span class="tag">WebSockets</span>
-            </div>
-            <h3 class="project-title">Tablero de Planes</h3>
-            <p class="project-description">A collaborative planning board built with real‑time WebSockets.</p>
-            <a href="https://board-kappa-seven.vercel.app/" class="project-button">Ver Detalles</a>
-        </div>
-    </div>
-
-    <!-- Dark -->
-    <div class="project-card reveal-item delay-1">
-        <div class="project-image">
-            <img src="https://c3sbqxalf1fdk2fd.public.blob.vercel-storage.com/5-jIZ1YQk34ItzBtmxfho0EQ94cT8e1W.png" alt="Dark">
-            <div class="project-overlay">
-                <div class="project-links">
-                    <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                    <a href="https://github.com/gh4m21/dark-proyectofinal" class="project-link"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="project-content">
-            <div class="project-tags">
-                <span class="tag">Unity</span><span class="tag">C#</span>
-            </div>
-            <h3 class="project-title">Dark</h3>
-            <p class="project-description">A 2.5D platformer game with three levels, developed in Unity.</p>
-            <a href="https://github.com/gh4m21/dark-proyectofinal" class="project-button">Ver Detalles</a>
-        </div>
-    </div>
-
-            <div class="project-card reveal-item delay-1">
-                <div class="project-image">
-                    <img src="https://c3sbqxalf1fdk2fd.public.blob.vercel-storage.com/2-N2Ap4JUAbE74ZQveZozlgg0yijwUVE.png" alt="Proyecto 2">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                            <a href="https://github.com/BryanMarc01/Chess-With-React" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Socket.io</span>
-                    </div>
-                    <h3 class="project-title">Chess With React</h3>
-                    <p class="project-description">This is my chess app made it in react. It is a simple app that allows you to play chess against other people .</p>
-                    <a href="https://github.com/BryanMarc01/Chess-With-React" class="project-button">Ver Detalles</a>
-                </div>
+    <!-- SERVICES — presentación de productos que cambia de color al scroll -->
+    <section id="servicios" aria-labelledby="servicios-title">
+        <div class="svc-stage"></div>
+        <div class="svc-flow">
+            <div class="svc-intro">
+                <span class="lbl" data-en="Services · What can I build for you?">Servicios · ¿Qué construyo para ti?</span>
+                <h2 id="servicios-title" class="svc-title-xl" data-en="What do you want to <span class='acc'>build</span>?">¿Qué quieres <span class="acc">construir</span>?</h2>
+                <p class="svc-intro-sub" data-en="Each service below is one tap away. Scroll to explore — tap any to message me on WhatsApp. I reply within 24 hours.">Cada servicio está a un toque. Desliza para explorar — toca cualquiera para escribirme por WhatsApp. Respondo en menos de 24 horas.</p>
+                <span class="svc-scroll-hint" data-en="Scroll ↓">Desliza ↓</span>
             </div>
 
-            <div class="project-card reveal-item delay-2">
-                <div class="project-image">
-                    <img src="https://c3sbqxalf1fdk2fd.public.blob.vercel-storage.com/3-9yhx3tsoEgJIoMTfQ77aPa4FaUATwg.png" alt="Proyecto 3">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+            <a class="svc-panel" data-color="#1b4dff" href="https://wa.me/18294946176?text=Hola%20Bryan%2C%20quiero%20consultar%20sobre%20el%20desarrollo%20de%20una%20aplicaci%C3%B3n%20m%C3%B3vil." target="_blank" rel="noopener" aria-label="Consultar sobre desarrollo de aplicaciones móviles por WhatsApp">
+                <div class="svc-panel-in">
+                    <span class="svc-tag" data-en="01 — Mobile">01 — Móvil</span>
+                    <h3 class="svc-big" data-en="Mobile apps people<br>actually use.">Apps móviles que<br>la gente usa.</h3>
+                    <p class="svc-lead" data-en="Native iOS &amp; Android with React Native, Kotlin or Flutter. MVPs, scalable products, APIs, authentication and web admin panels.">Nativas para iOS y Android con React Native, Kotlin o Flutter. MVPs, productos escalables, APIs, autenticación y paneles de administración.</p>
+                    <span class="svc-cta-btn" data-en="Get a quote →">Consultar este servicio →</span>
+                </div>
+            </a>
 
-                        </div>
-                    </div>
+            <a class="svc-panel" data-color="#6a24e0" href="https://wa.me/18294946176?text=Hola%20Bryan%2C%20quiero%20consultar%20sobre%20el%20desarrollo%20de%20una%20plataforma%20web." target="_blank" rel="noopener" aria-label="Consultar sobre desarrollo de plataformas web por WhatsApp">
+                <div class="svc-panel-in">
+                    <span class="svc-tag" data-en="02 — Web">02 — Web</span>
+                    <h3 class="svc-big" data-en="Web platforms<br>that scale.">Plataformas web<br>que escalan.</h3>
+                    <p class="svc-lead" data-en="React, Next.js and Node.js over SQL or NoSQL. Admin dashboards, e-commerce, SaaS and corporate portals — fast and secure.">React, Next.js y Node.js sobre SQL o NoSQL. Paneles, e-commerce, SaaS y portales corporativos — rápidos y seguros.</p>
+                    <span class="svc-cta-btn" data-en="Get a quote →">Consultar este servicio →</span>
                 </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">Vue.js</span>
-                        <span class="tag">Firebase</span>
-                    </div>
+            </a>
 
-                    <h3 class="project-title">Dream Fit AI </h3>
-                    <p class="project-description">Dream Fit AI - The next A.I for your style.</p>
-                    <a href="https://github.com/BryanMarc01/Dream-Fit-AI" class="project-button">Ver Detalles</a>
+            <a class="svc-panel" data-color="#b21fd1" href="https://wa.me/18294946176?text=Hola%20Bryan%2C%20quiero%20consultar%20sobre%20un%20agente%20de%20voz%20con%20IA." target="_blank" rel="noopener" aria-label="Consultar sobre agentes de voz con inteligencia artificial por WhatsApp">
+                <div class="svc-panel-in">
+                    <span class="svc-tag" data-en="03 — Artificial Intelligence">03 — Inteligencia Artificial</span>
+                    <h3 class="svc-big" data-en="Voice AI that works<br>around the clock.">IA de voz que trabaja<br>24/7.</h3>
+                    <p class="svc-lead" data-en="Conversational systems that listen, speak and act. Support, sales, reminders and automation with OpenAI and Twilio.">Sistemas conversacionales que escuchan, hablan y actúan. Soporte, ventas, recordatorios y automatización con OpenAI y Twilio.</p>
+                    <span class="svc-cta-btn" data-en="Get a quote →">Consultar este servicio →</span>
                 </div>
-            </div>
+            </a>
 
-            <!-- Nuevos Proyectos Profesionales -->
+            <a class="svc-panel" data-color="#0a93b0" href="https://wa.me/18294946176?text=Hola%20Bryan%2C%20quiero%20consultar%20sobre%20un%20sistema%20de%20gesti%C3%B3n%20o%20software%20SaaS%20a%20medida." target="_blank" rel="noopener" aria-label="Consultar sobre sistemas de gestión y software SaaS a medida por WhatsApp">
+                <div class="svc-panel-in">
+                    <span class="svc-tag" data-en="04 — Custom SaaS">04 — SaaS a medida</span>
+                    <h3 class="svc-big" data-en="Software that runs<br>your operation.">Software que mueve<br>tu operación.</h3>
+                    <p class="svc-lead" data-en="Custom systems for clinics, HR, automotive, real estate and internal operations. Automate your business end to end.">Sistemas a medida para clínicas, RRHH, automotriz, inmobiliaria y operaciones internas. Automatiza tu negocio de punta a punta.</p>
+                    <span class="svc-cta-btn" data-en="Get a quote →">Consultar este servicio →</span>
+                </div>
+            </a>
 
-            <!-- Easy Online English -->
-            <div class="project-card reveal-item">
-                <div class="project-image">
-                    <img src="https://abaw33hy9bfvxqdq.public.blob.vercel-storage.com/logoo-VwZrWBbCRKonq7x72TKO0TfiC1CUqH.webp" alt="Easy Online English">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://easyonlineenglish.com" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
+            <a class="svc-panel" data-color="#0f9b54" href="https://wa.me/18294946176?text=Hola%20Bryan%2C%20quiero%20consultar%20sobre%20una%20landing%20page%20de%20conversi%C3%B3n." target="_blank" rel="noopener" aria-label="Consultar sobre landing pages de conversión por WhatsApp">
+                <div class="svc-panel-in">
+                    <span class="svc-tag" data-en="05 — Landing &amp; SEO">05 — Landing &amp; SEO</span>
+                    <h3 class="svc-big" data-en="Landing pages<br>built to convert.">Landing pages<br>que convierten.</h3>
+                    <p class="svc-lead" data-en="Fast pages with strategic copy, performance, technical SEO and results tracking from day one.">Páginas rápidas con copy estratégico, performance, SEO técnico y medición de resultados desde el primer día.</p>
+                    <span class="svc-cta-btn" data-en="Get a quote →">Consultar este servicio →</span>
                 </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">React.js</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Sass</span>
-                        <span class="tag">TypeScript</span>
-                    </div>
-                    <h3 class="project-title">Easy Online English</h3>
-                    <p class="project-description">Plataforma educativa para el aprendizaje de inglés en línea con sistema de cursos interactivos y seguimiento de progreso.</p>
-                    <a href="https://easyonlineenglish.com" class="project-button" target="_blank">Ver Sitio</a>
-                </div>
-            </div>
+            </a>
 
-            <!-- Houterao -->
-            <div class="project-card reveal-item delay-1">
-                <div class="project-image">
-                    <img src="https://houterao.com/wp-content/uploads/logo-aof.png" alt="Houterao Gaming">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://houterao.com/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Gaming</span>
-                    </div>
-                    <h3 class="project-title">Houterao Gaming</h3>
-                    <p class="project-description">Sitio web desarrollado para un cliente que requería una plataforma para su servidor de Aofrost con funcionalidades gaming.</p>
-                    <a href="https://houterao.com/" class="project-button" target="_blank">Ver Sitio</a>
-                </div>
-            </div>
-
-            <!-- ALS -->
-            <div class="project-card reveal-item delay-2">
-                <div class="project-image">
-                    <img src="https://als.com.do/wp-content/uploads/2025/08/Recurso-6@300x.png" alt="ALS Recursos Humanos">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://als.com.do/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">HR System</span>
-                    </div>
-                    <h3 class="project-title">ALS Recursos Humanos</h3>
-                    <p class="project-description">Sistema web de recursos humanos para Ability Seminar con gestión de empleados, nóminas y procesos administrativos.</p>
-                    <a href="https://als.com.do/" class="project-button" target="_blank">Ver Sitio</a>
-                </div>
-            </div>
-
-            <!-- Ability Seminars Group -->
-            <div class="project-card reveal-item">
-                <div class="project-image">
-                    <img src="https://abilityseminarsgroup.com/wp-content/uploads/2023/09/Asset-6-4.png" alt="Ability Seminars Group">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://abilityseminarsgroup.com/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Webinars</span>
-                        <span class="tag">E-Learning</span>
-                    </div>
-                    <h3 class="project-title">Ability Seminars Group</h3>
-                    <p class="project-description">Plataforma corporativa para webinarios virtuales, cursos online y sistema de agenda para la empresa donde trabajo.</p>
-                    <a href="https://abilityseminarsgroup.com/" class="project-button" target="_blank">Ver Sitio</a>
-                </div>
-            </div>
-
-            <!-- Clear Mind Foundation -->
-            <div class="project-card reveal-item delay-1">
-                <div class="project-image">
-                    <img src="https://i0.wp.com/clearmindfoundation.org/wp-content/uploads/2025/05/Recurso-2%40300x-scaled.png?fit=2560%2C1213&ssl=1" alt="Clear Mind Foundation">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://clearmindfoundation.org/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Workshops</span>
-                    </div>
-                    <h3 class="project-title">Clear Mind Foundation</h3>
-                    <p class="project-description">Sitio web con sistema integrado para la gestión e impartición de talleres educativos y de desarrollo personal.</p>
-                    <a href="https://clearmindfoundation.org/" class="project-button" target="_blank">Ver Sitio</a>
-                </div>
-            </div>
-
-            <!-- Cultura Viva -->
-            <div class="project-card reveal-item delay-2">
-                <div class="project-image">
-                    <img src="https://culturaviva.org/wp-content/uploads/2025/02/Sin-titulo-1_Mesa-de-trabajo-1_Mesa-de-trabajo-1-1024x694.png" alt="Cultura Viva">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="http://culturaviva.org" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Webinars</span>
-                        <span class="tag">Culture</span>
-                    </div>
-                    <h3 class="project-title">Cultura Viva</h3>
-                    <p class="project-description">Plataforma cultural dedicada a la organización y transmisión de webinarios sobre arte, cultura y patrimonio.</p>
-                    <a href="http://culturaviva.org" class="project-button" target="_blank">Ver Sitio</a>
-                </div>
-            </div>
-
-            <!-- Launcher Rural -->
-            <div class="project-card reveal-item">
-                <div class="project-image">
-                    <img src="https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/region/global/products/tablets/tcl-nxtpaper-14/id/1.png?t=1721272443153&w=800&webp=undefined&dpr=2.625&rendition=1068" alt="Launcher Rural">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-mobile-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="tag">Flutter</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Mobile</span>
-                    </div>
-                    <h3 class="project-title">Launcher Rural</h3>
-                    <p class="project-description">Aplicación móvil launcher para adultos desarrollada con Flutter para el frontend móvil y React + Node.js para el backend.</p>
-                    <a href="#" class="project-button private-project">Ver Detalles</a>
+            <div class="svc-panel svc-outro" data-color="#07070f">
+                <div class="svc-panel-in">
+                    <h3 class="svc-big" data-en="Don't see your idea?<br>Let's talk anyway.">¿No ves tu idea?<br>Hablemos igual.</h3>
+                    <p class="svc-lead" data-en="Tell me what you have in mind and I'll tell you how to build it.">Cuéntame qué tienes en mente y te digo cómo construirlo.</p>
+                    <a class="btn btn-lg" href="https://wa.me/18294946176" target="_blank" rel="noopener" data-en="Message me on WhatsApp →">Escríbeme por WhatsApp →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Nueva sección: Testimonios -->
-<!-- Testimonios Section -->
-<section id="testimonials" class="testimonials section-light">
-    <div class="container">
-        <!-- Badge de sección -->
-        <div class="section-badge badge-green" data-aos="fade-down">
-            <span class="badge-icon">⭐</span>
-            <span class="badge-text">100% Clientes Satisfechos</span>
+    <!-- ARCHITECTURE -->
+    <section id="arquitectura" class="section">
+        <div class="si">
+            <div class="arch-hdr">
+                <div>
+                    <span class="lbl" data-en="Product Architecture">Arquitectura de Producto</span>
+                    <h2 class="arch-title" data-en="From idea<br>to product<br><span class='dim'>that scales.</span>">De la idea<br>al producto<br><span class="dim">que escala.</span></h2>
+                </div>
+                <div class="arch-desc">
+                    <p data-en="No generic frameworks, no templates. Every product starts by understanding the business and ends with software that runs in production. Native mobile, solid backend, interfaces users actually want to use — and AI systems that automate what shouldn't need humans.">No frameworks genéricos, no plantillas. Cada producto parte de entender el negocio y termina con software que funciona en producción. Mobile nativo, backend robusto, interfaces que los usuarios quieren usar — y sistemas de IA que automatizan lo que no debería requerir humanos.</p>
+                </div>
+            </div>
+            <div class="arch-cards">
+                <div class="arch-card">
+                    <p class="arch-num">01 — FRONTEND & MOBILE</p>
+                    <h3 data-en="Experiences users feel">Experiencias que los usuarios sienten</h3>
+                    <p data-en="React Native, Kotlin, Flutter and React for mobile apps and high-fidelity web interfaces. Performance first, accessibility included.">React Native, Kotlin, Flutter y React para aplicaciones móviles e interfaces web de alta fidelidad. Performance primero, accesibilidad incluida.</p>
+                    <div class="tags"><span class="tag">React Native</span><span class="tag">Kotlin</span><span class="tag">Flutter</span><span class="tag">React</span><span class="tag">Next.js</span></div>
+                </div>
+                <div class="arch-card">
+                    <p class="arch-num">02 — BACKEND & DATA</p>
+                    <h3 data-en="Production-ready systems">Sistemas listos para producción</h3>
+                    <p data-en="Node.js, Express, REST and GraphQL APIs over MongoDB, PostgreSQL or Firebase. Architectures that support growth without a rewrite.">Node.js, Express, APIs REST y GraphQL sobre MongoDB, PostgreSQL o Firebase. Arquitecturas que soportan crecimiento sin reescritura.</p>
+                    <div class="tags"><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">PostgreSQL</span><span class="tag">Firebase</span><span class="tag">GraphQL</span></div>
+                </div>
+                <div class="arch-card">
+                    <p class="arch-num">03 — AI & AUTOMATIZACIÓN</p>
+                    <h3 data-en="Intelligence that works 24/7">Inteligencia que trabaja 24/7</h3>
+                    <p data-en="AI voice agents, NLP and integration with OpenAI and Twilio. Systems that listen, reason and act without human intervention.">Agentes de voz con IA, NLP e integración con OpenAI y Twilio. Sistemas que escuchan, razonan y actúan sin intervención humana.</p>
+                    <div class="tags"><span class="tag">Voice AI</span><span class="tag">OpenAI</span><span class="tag">Twilio</span><span class="tag">NLP</span><span class="tag">Automation</span></div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="section-header" data-aos="fade-up">
-            <h2 class="section-title">Lo Que Dicen Mis Clientes</h2>
-            <p class="section-subtitle">Resultados que hablan por sí mismos</p>
+    <!-- PROJECTS FEATURED -->
+    <section id="proyectos" style="position:relative;">
+        <div style="padding:4rem 2.5rem 0;max-width:1200px;margin:0 auto;"><span class="lbl">Selected Work</span></div>
+        <div class="sticky-wrap">
+            <div class="sticky-inner">
+                <div class="panel active" id="panel-0">
+                    <div class="panel-bg" style="background-image:url('entuzona.png'),linear-gradient(135deg,#0f2027,#203a43)"></div>
+                    <div class="panel-ov"></div>
+                    <div class="panel-info">
+                        <div>
+                            <p class="p-cat">CEO Project — Local Marketplace</p>
+                            <h2 class="p-title">EntuZona</h2>
+                            <p class="p-desc">Plataforma digital que conecta usuarios, comercios y servicios locales. CEO y arquitecto principal. Mobile-first, mercado dominicano.</p>
+                            <div class="tags"><span class="tag">CEO</span><span class="tag">Marketplace</span><span class="tag">Mobile/Web</span><span class="tag">RD</span></div>
+                            <a href="https://entuzona.app/" target="_blank" rel="noopener" class="p-link">Ver proyecto →</a>
+                        </div>
+                        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:1rem;">
+                            <span class="p-counter">01</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel" id="panel-1">
+                    <div class="panel-bg" style="background-image:url('citaly.png'),linear-gradient(135deg,#1a1a2e,#16213e)"></div>
+                    <div class="panel-ov"></div>
+                    <div class="panel-info">
+                        <div>
+                            <p class="p-cat">CEO Project — HealthTech Platform</p>
+                            <h2 class="p-title">Citaly RD</h2>
+                            <p class="p-desc">Plataforma de citas y gestión para salud y servicios profesionales en RD. Reservas, atención y operación simplificadas.</p>
+                            <div class="tags"><span class="tag">CEO</span><span class="tag">HealthTech</span><span class="tag">Appointments</span><span class="tag">RD</span></div>
+                            <a href="https://citalyrd.com/" target="_blank" rel="noopener" class="p-link">Ver proyecto →</a>
+                        </div>
+                        <span class="p-counter">02</span>
+                    </div>
+                </div>
+                <div class="panel" id="panel-2">
+                    <div class="panel-bg" style="background-image:url('appmypets.png'),linear-gradient(135deg,#0d2137,#1a4a6b)"></div>
+                    <div class="panel-ov"></div>
+                    <div class="panel-info">
+                        <div>
+                            <p class="p-cat">Full Stack — Pet-Tech Platform</p>
+                            <h2 class="p-title">AppMyPets</h2>
+                            <p class="p-desc">App móvil profesional para gestión y cuidado de mascotas. Full-stack: React Native, panel React, MongoDB + TypeScript.</p>
+                            <div class="tags"><span class="tag">React Native</span><span class="tag">TypeScript</span><span class="tag">MongoDB</span><span class="tag">React</span></div>
+                            <a href="https://appmypets.es" target="_blank" rel="noopener" class="p-link">Ver proyecto →</a>
+                        </div>
+                        <span class="p-counter">03</span>
+                    </div>
+                </div>
+                <div class="panel" id="panel-3">
+                    <div class="panel-bg" style="background-image:url('The Shadows of Quisqueya.png'),linear-gradient(135deg,#1a0533,#2d0a5e)"></div>
+                    <div class="panel-ov"></div>
+                    <div class="panel-info">
+                        <div>
+                            <p class="p-cat">Game Dev — Personal Project</p>
+                            <h2 class="p-title">The Shadows of Quisqueya</h2>
+                            <p class="p-desc">Videojuego 3D RPG ambientado en la mitología de Quisqueya. Identidad propia, desarrollo activo en Unity con C#.</p>
+                            <div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">3D RPG</span><span class="tag">Quisqueya</span></div>
+                            <span class="p-link off">En desarrollo</span>
+                        </div>
+                        <span class="p-counter">04</span>
+                    </div>
+                </div>
+                <div class="panel-nav">
+                    <div class="pdot on" data-panel="0"></div>
+                    <div class="pdot" data-panel="1"></div>
+                    <div class="pdot" data-panel="2"></div>
+                    <div class="pdot" data-panel="3"></div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="testimonials-grid" data-aos="fade-up" data-aos-delay="200">
-            <!-- Testimonio 1 -->
-            <div class="testimonial-card">
-                <div class="testimonial-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="testimonial-text">"Buen programador, ha entendido mi petición para modificar una app en android, es muy atento y ha realizado el trabajo genial, recomendado!"</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">Y</div>
-                    <div class="author-info">
-                        <h4>yitan06</h4>
-                        <p>Cliente Freelance</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonio 2 -->
-            <div class="testimonial-card">
-                <div class="testimonial-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="testimonial-text">"Excelente trabajo en el desarrollo de nuestra aplicación de música. Bryan entendió perfectamente nuestras necesidades y entregó un producto de alta calidad."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">M</div>
-                    <div class="author-info">
-                        <h4>MusicStream Inc.</h4>
-                        <p>Cliente Corporativo</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonio 3 -->
-            <div class="testimonial-card">
-                <div class="testimonial-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="testimonial-text">"La responsabilidad es lo que define a Bryan. Siempre cumple con los plazos y la calidad del código es excepcional."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">E</div>
-                    <div class="author-info">
-                        <h4>Easy Online English</h4>
-                        <p>Project Manager</p>
-                    </div>
-                </div>
-            </div>
+    <!-- PROJECTS GRID -->
+    <div class="grid-section">
+        <div class="grid-hdr"><div><span class="lbl" data-en="More projects">Más proyectos</span><h2 data-en="16+ other works">Otros 16+ trabajos</h2></div></div>
+        <div class="gprojects">
+            <a class="gp" href="https://vamosrural.com/es" target="_blank" rel="noopener"><p class="gp-num">05 / RURAL TOURISM</p><h3>VamosRural</h3><p>React · Node.js · TypeScript</p><span class="gp-arr">↗</span></a>
+            <a class="gp" href="https://easyonlineenglish.com" target="_blank" rel="noopener"><p class="gp-num">06 / ED-TECH</p><h3>Easy Online English</h3><p>React.js · Node.js · Sass</p><span class="gp-arr">↗</span></a>
+            <a class="gp" href="https://solares.do/" target="_blank" rel="noopener"><p class="gp-num">07 / REAL ESTATE</p><h3>Solares.do</h3><p>React · Node.js · Maps API</p><span class="gp-arr">↗</span></a>
+            <a class="gp" href="https://marcsoftware.com/consulsoft.html" target="_blank" rel="noopener"><p class="gp-num">08 / MEDICAL SAAS</p><h3>Consulsoft</h3><p>React · Node.js · Medical</p><span class="gp-arr">↗</span></a>
+            <a class="gp" href="https://als.com.do/" target="_blank" rel="noopener"><p class="gp-num">09 / HR SYSTEM</p><h3>ALS Recursos Humanos</h3><p>React · Node.js</p><span class="gp-arr">↗</span></a>
+            <a class="gp" href="https://tabgroups.com/" target="_blank" rel="noopener"><p class="gp-num">10 / LUXURY R.E.</p><h3>TabGroups — Sosúa</h3><p>React · Node.js</p><span class="gp-arr">↗</span></a>
+            <a class="gp" href="https://github.com/BryanMarc01/Chess-With-React" target="_blank" rel="noopener"><p class="gp-num">11 / WEB APP</p><h3>Chess With React</h3><p>React · Socket.io</p><span class="gp-arr">↗</span></a>
+            <a class="gp" href="https://prolube.com.ar/" target="_blank" rel="noopener"><p class="gp-num">12 / AUTOMOTIVE</p><h3>PROLUBE Argentina</h3><p>React · Node.js</p><span class="gp-arr">↗</span></a>
+            <a class="gp" href="https://houterao.com/" target="_blank" rel="noopener"><p class="gp-num">13 / GAMING</p><h3>Houterao Gaming</h3><p>React · Node.js</p><span class="gp-arr">↗</span></a>
+            <div class="gp"><p class="gp-num">14 / VOICE AI</p><h3>RuralCare Voice AI</h3><p>Node.js · OpenAI · Twilio</p></div>
+            <div class="gp"><p class="gp-num">15 / STREAMING</p><h3>MeloView</h3><p>Kotlin · Firebase · Privado</p></div>
+            <div class="gp"><p class="gp-num">16 / MUSIC APP</p><h3>I AM MUSIC</h3><p>Kotlin · Android · Privado</p></div>
+            <a class="gp" href="https://github.com/BryanMarc01/stickyNotes-For-Android" target="_blank" rel="noopener"><p class="gp-num">17 / OSS ANDROID</p><h3>stickyNotes Android</h3><p>Android Studio · Java</p><span class="gp-arr">↗</span></a>
+            <a class="gp" href="https://github.com/BryanMarc01/Ammunation" target="_blank" rel="noopener"><p class="gp-num">18 / DEVOPS</p><h3>Ammunation</h3><p>Docker · Kubernetes · React</p><span class="gp-arr">↗</span></a>
+            <a class="gp" href="https://board-kappa-seven.vercel.app/" target="_blank" rel="noopener"><p class="gp-num">19 / REAL-TIME</p><h3>Tablero de Planes</h3><p>HTML · CSS · WebSockets</p><span class="gp-arr">↗</span></a>
+            <a class="gp" href="https://github.com/BryanMarc01/Dream-Fit-AI" target="_blank" rel="noopener"><p class="gp-num">20 / AI FASHION</p><h3>Dream Fit AI</h3><p>Vue.js · Firebase · AI</p><span class="gp-arr">↗</span></a>
         </div>
     </div>
-</section>
 
+    <!-- STATS -->
+    <section id="stats" class="section">
+        <div class="si">
+            <span class="lbl" data-en="Real numbers">Números reales</span>
+            <h2 style="font-size:clamp(2rem,4vw,3rem);font-weight:600;letter-spacing:-.055em;" data-en="Production impact.">Impacto en producción.</h2>
+            <div class="stats-grid">
+                <div class="stat-item"><div class="stat-num" data-target="20"><span class="stat-val">0</span><span class="stat-suf">+</span></div><p class="stat-lbl" data-en="Projects shipped to production">Proyectos desplegados en producción</p></div>
+                <div class="stat-item"><div class="stat-num" data-target="12"><span class="stat-val">0</span><span class="stat-suf">+</span></div><p class="stat-lbl" data-en="Happy clients across multiple countries">Clientes satisfechos en múltiples países</p></div>
+                <div class="stat-item"><div class="stat-num" data-target="5"><span class="stat-val">0</span><span class="stat-suf">+</span></div><p class="stat-lbl" data-en="Countries where my software runs">Países donde opera mi software</p></div>
+                <div class="stat-item"><div class="stat-num" data-target="3"><span class="stat-val">0</span><span class="stat-suf">+</span></div><p class="stat-lbl" data-en="Years of full-stack experience">Años de experiencia full-stack</p></div>
+            </div>
+        </div>
+    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section-dark">
-        <div class="container">
-            <!-- Badge de sección -->
-            <div class="section-badge badge-blue" data-aos="fade-down">
-                <span class="badge-icon">🚀</span>
-                <span class="badge-text">5+ Años de Experiencia</span>
-            </div>
-
-            <div class="section-header">
-                <h2 class="section-title reveal-text">Ingeniero de Software Full-Stack</h2>
-                <p class="section-subtitle reveal-text delay-1">Especializado en crear experiencias digitales excepcionales</p>
-            </div>
-        
-        <div class="about-container">
-            <div class="about-image reveal-item">
-             
-            </div>
-            <div class="about-content">
-                <h3 class="reveal-text">Ing. Bryan Marc Sosa Moran</h3>
-                <p class="reveal-text delay-1">Soy un desarrollador apasionado por crear experiencias web interactivas y atractivas. Con experiencia en HTML, CSS, JavaScript y frameworks modernos, me especializo en construir aplicaciones web responsivas y con excelente UX/UI. También tengo amplia experiencia en desarrollo de aplicaciones móviles nativas con Kotlin y Java para Android.</p>
-                
-                <div class="skills reveal-item delay-2">
-                    <h4>Stack Tecnológico</h4>
-                    <div class="skill-bars">
-                        <div class="skill">
-                            <div class="skill-name">React Native</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">Kotlin / Android</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="88"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">TypeScript</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">React / Next.js</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="87"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">Node.js / Express</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="82"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">MongoDB / Firebase</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">Java / Spring Boot</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">Flutter / Dart</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="78"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">Git / CI/CD</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">REST APIs / GraphQL</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="83"></div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- ABOUT -->
+    <section id="sobre-mi" class="section">
+        <div class="si">
+            <div class="about-inner">
+                <div class="about-img-wrap">
+                    <img src="Yo.jpeg" alt="Bryan Marc Sosa Morán, desarrollador Full Stack en Puerto Plata, República Dominicana" loading="lazy" decoding="async" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80'"/>
+                    <div class="about-ov"><p>Puerto Plata, RD</p><p data-en="Available for projects">Disponible para proyectos</p></div>
                 </div>
-                
-                <div class="about-buttons reveal-item delay-3">
-                    <a href="https://c3sbqxalf1fdk2fd.public.blob.vercel-storage.com/Ing.%20Bryan%20Marc%20S.M%20CV%20Actualizado%20V4.pdf" class="about-button" target="_blank">
-                        <i class="fas fa-download"></i>
-                        Descargar CV
-                    </a>
-                    <a href="mailto:bmarcenlinea@gmail.com" class="about-button outline">
-                        <i class="fas fa-envelope"></i>
-                        Contactar
-                    </a>
+                <div>
+                    <span class="lbl" data-en="About me">Sobre mí</span>
+                    <h2 class="about-title" data-en="Full-Stack engineer with a product mindset.">Ingeniero Full-Stack con enfoque de producto.</h2>
+                    <p class="about-body" data-en="I build functional digital experiences with purpose. I work with startups and established companies in the Dominican Republic, Spain, Argentina and beyond, combining mobile development, web platforms, backend and AI automation.<br><br>I believe in clean code, in understanding the problem before writing a line, and in shipping software that truly works in production.">Desarrollo experiencias digitales funcionales y con propósito. Trabajo con startups y empresas consolidadas en República Dominicana, España, Argentina y más, combinando desarrollo móvil, plataformas web, backend y automatización con IA.<br><br>Creo en código limpio, en entender el problema antes de escribir una línea, y en entregar software que realmente funciona en producción.</p>
+                    <div class="tags"><span class="tag">React Native</span><span class="tag">Kotlin</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Firebase</span><span class="tag">Voice AI</span><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Docker</span></div>
+                    <div class="about-links">
+                        <a href="https://www.linkedin.com/in/bryanmarc/" target="_blank" rel="noopener">LinkedIn ↗</a>
+                        <a href="https://github.com/BryanMarc01" target="_blank" rel="noopener">GitHub ↗</a>
+                        <a href="https://c3sbqxalf1fdk2fd.public.blob.vercel-storage.com/Ing.%20Bryan%20Marc%20S.M%20CV%20Actualizado%20V4.pdf" target="_blank" rel="noopener" class="c" data-en="Download CV ↗">Descargar CV ↗</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section-cta">
-        <div class="container">
-            <!-- Badge de sección -->
-            <div class="section-badge badge-red" data-aos="fade-down">
-                <span class="badge-icon">💼</span>
-                <span class="badge-text">Disponible para Nuevos Proyectos</span>
-            </div>
-
-            <div class="section-header">
-                <h2 class="section-title reveal-text">¿Listo Para Empezar?</h2>
-                <p class="section-subtitle reveal-text delay-1">Convierte tu idea en realidad. Hablemos hoy.</p>
-            </div>
-        
-        <div class="contact-container">
-            <div class="contact-info reveal-item">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4>Ubicación</h4>
-                        <p>Puerto Plata, Dominican Republic</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4>Email</h4>
-                        <p><a href="mailto:bmarcenlinea@gmail.com">bmarcenlinea@gmail.com</a></p>
-
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4>Teléfono</h4>
-                        <p>+1 829 494 6176</p>
-                    </div>
-                </div>
-                
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/bryanmarc/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/BryanMarc01" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/bryanmarc_/" class="social-link"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            
-            <div class="contact-form reveal-item delay-1">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="" required>
-                        <label for="name">Nombre</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="" required>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="" required>
-                        <label for="subject">Asunto</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="" required></textarea>
-                        <label for="message">Mensaje</label>
-                    </div>
-                    <button type="submit" class="submit-button">
-                        <span>Enviar Mensaje</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
+    <!-- TESTIMONIALS -->
+    <section id="testimonios" class="section">
+        <div class="si">
+            <span class="lbl" data-en="Social proof">Validación</span>
+            <h2 style="font-size:clamp(2rem,4vw,3rem);font-weight:600;letter-spacing:-.055em;" data-en="Clients who already trusted me.">Clientes que ya confiaron.</h2>
+            <div class="testi-grid">
+                <div class="testi-card"><p class="testi-q" data-en="&quot;Great developer, he understood my request to modify an Android app, very attentive and did the job perfectly, recommended!&quot;">"Buen programador, ha entendido mi petición para modificar una app en Android, es muy atento y ha realizado el trabajo genial, recomendado!"</p><div><p class="testi-name">yitan06</p><p class="testi-role" data-en="Freelance client">Cliente Freelance</p></div></div>
+                <div class="testi-card"><p class="testi-q" data-en="&quot;Excellent work developing our music app. Bryan understood our needs perfectly and delivered a high-quality product.&quot;">"Excelente trabajo en el desarrollo de nuestra aplicación de música. Bryan entendió perfectamente nuestras necesidades y entregó un producto de alta calidad."</p><div><p class="testi-name">MusicStream Inc.</p><p class="testi-role" data-en="Corporate client">Cliente Corporativo</p></div></div>
+                <div class="testi-card"><p class="testi-q" data-en="&quot;Reliability is what defines Bryan. He always meets deadlines and the code quality is exceptional.&quot;">"La responsabilidad es lo que define a Bryan. Siempre cumple con los plazos y la calidad del código es excepcional."</p><div><p class="testi-name">Easy Online English</p><p class="testi-role">Project Manager</p></div></div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      
-        <div class="footer-bottom">
-            <p>&copy; 2025 Bryan Marc Sosa Moran. Todos los derechos reservados.</p>
+    <!-- PHILOSOPHY -->
+    <section id="filosofia">
+        <span class="lbl" style="position:relative;z-index:1;" data-en="Philosophy">Filosofía</span>
+        <h2 class="philo-text">
+            Software should<br>disappear.<br>
+            <span class="outline">Experience</span><br>
+            <span class="outline">should remain.</span>
+        </h2>
+        <p class="philo-sub" data-en="I build software thinking about people first and technology second: speed, clarity, stability and real purpose.">Construyo software pensando primero en las personas y después en la tecnología: velocidad, claridad, estabilidad y propósito real.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contacto" class="section">
+        <div class="si">
+            <div class="contact-inner">
+                <div>
+                    <span class="lbl" data-en="Contact">Contacto</span>
+                    <h2 class="contact-title">Let's build<br>something<br><span class="acc">amazing.</span></h2>
+                    <p class="contact-sub" data-en="Got an idea or a project? Let's talk. I reply within 24 hours.">¿Tienes una idea o un proyecto? Hablemos. Respondo en menos de 24 horas.</p>
+                    <div class="ci-grid">
+                        <div class="ci-row"><span data-en="Location">Ubicación</span><span>Puerto Plata, República Dominicana</span></div>
+                        <div class="ci-row"><span>Email</span><a href="mailto:bmarcenlinea@gmail.com">bmarcenlinea@gmail.com</a></div>
+                        <div class="ci-row"><span>WhatsApp</span><a href="https://wa.me/18294946176" target="_blank" rel="noopener">+1 829 494 6176</a></div>
+                        <div class="ci-row"><span>LinkedIn</span><a href="https://www.linkedin.com/in/bryanmarc/" target="_blank" rel="noopener">bryanmarc</a></div>
+                    </div>
+                    <div class="soc-links">
+                        <a href="https://github.com/BryanMarc01" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://www.instagram.com/bryanmarc_/" target="_blank" rel="noopener">Instagram</a>
+                    </div>
+                </div>
+                <div class="terminal">
+                    <div class="term-bar">
+                        <div class="tdot" style="background:#FF5F57"></div>
+                        <div class="tdot" style="background:#FEBC2E"></div>
+                        <div class="tdot" style="background:#28C840"></div>
+                        <span class="term-bar-title">bryan-marc — contact</span>
+                    </div>
+                    <div class="term-body">
+                        <div class="tl"><span class="tp">~$</span><span id="ttyped"></span><span class="cursor-blink" id="tcursor"></span></div>
+                        <div id="tform">
+                            <div class="tl"><span class="tok">✓</span><span data-en="Connection established. Share your project details.">Conexión establecida. Comparte los detalles de tu proyecto.</span></div><br>
+                            <div class="tf"><span class="tp" data-en="name&nbsp;&nbsp;:">nombre:</span><input type="text" class="ti" id="tn" placeholder="Tu nombre" data-en-ph="Your name"/></div>
+                            <div class="tf"><span class="tp">email&nbsp;&nbsp;:</span><input type="email" class="ti" id="te" placeholder="tu@email.com"/></div>
+                            <div class="tf"><span class="tp" data-en="message:">mensaje:</span><textarea class="tta" id="tm" placeholder="Cuéntame sobre tu proyecto..." data-en-ph="Tell me about your project..."></textarea></div>
+                            <button class="tsend" onclick="submitTerm()">$ send_message --now</button>
+                        </div>
+                        <div id="tsuccess">
+                            <div class="tl"><span class="tok">✓</span><span data-en="Message sent successfully.">Mensaje enviado con éxito.</span></div>
+                            <div class="tl"><span class="tok">✓</span><span data-en="I'll reply within 24 hours.">Responderé en menos de 24 horas.</span></div>
+                            <div class="tl"><span class="tp">~$</span><span>exit</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div><p class="foot-logo">Bryan Marc Sosa Morán</p><p>© 2026 — Full-Stack Engineer. Mobile, Web &amp; AI.</p></div>
+        <div class="foot-links">
+            <a href="mailto:bmarcenlinea@gmail.com">Email</a>
+            <a href="https://github.com/BryanMarc01" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/bryanmarc/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/bryanmarc_/" target="_blank" rel="noopener">Instagram</a>
         </div>
     </footer>
 
-    <!-- Back to top button -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    </div><!-- #webstart -->
 
-    <!-- Modal para proyectos privados -->
-    <div id="privateProjectModal" class="modal">
-        <div class="modal-content">
-            <span class="modal-close">&times;</span>
-            <div class="modal-icon">
-                <i class="fas fa-lock"></i>
-            </div>
-            <h2>Proyecto Privado</h2>
-            <p>Este proyecto es confidencial y pertenece a un cliente privado.</p>
-            <p>Si estás interesado en conocer más sobre mi trabajo, no dudes en contactarme.</p>
-            <a href="mailto:bmarcenlinea@gmail.com" class="modal-button">
-                <i class="fas fa-envelope"></i>
-                Contactar
-            </a>
-        </div>
-    </div>
+</div><!-- #root -->
 
-    <!-- GSAP (GreenSock Animation Platform) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+<script>
+(function () {
+'use strict';
 
-    <!-- Locomotive Scroll -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+/* ══════════════════════════════════════════════════
+   THREE.JS — SCENE SETUP
+══════════════════════════════════════════════════ */
+var W = innerWidth, H = innerHeight;
+var canvas = document.getElementById('bg');
+var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
+renderer.setSize(W, H);
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.0;
+renderer.outputEncoding = THREE.sRGBEncoding;
 
-    <!-- AOS (Animate On Scroll) -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+var scene = new THREE.Scene();
+scene.background = new THREE.Color(0x000000);
+scene.fog = new THREE.FogExp2(0x000000, 0.02);
 
-    <!-- Particles.js para efectos de fondo -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+var camera = new THREE.PerspectiveCamera(70, W / H, 0.1, 140);
+camera.position.set(0, 0, 9);
 
-    <!-- Vanilla Tilt para efectos 3D -->
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+/* ── LIGHTS ── */
+scene.add(new THREE.AmbientLight(0x0a0a22, 2));
+var lC = new THREE.PointLight(0x2997ff, 9, 30); lC.position.set(4, 3, 7); scene.add(lC);
+var lP = new THREE.PointLight(0x5e9eff, 7, 30); lP.position.set(-4, -2, 5); scene.add(lP);
+var lT = new THREE.PointLight(0x64d2ff, 4, 25); lT.position.set(0, 5, -10); scene.add(lT);
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="script.js"></script>
+/* Environment PBR — reflejos suaves para los modelos .gltf */
+var pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new THREE.RoomEnvironment(), 0.04).texture;
+
+/* Luz clave blanca para iluminar los modelos reales */
+var lKey = new THREE.DirectionalLight(0xffffff, 1.7);
+lKey.position.set(5, 8, 6); scene.add(lKey);
+var lFill = new THREE.DirectionalLight(0xbcd4ff, 0.6);
+lFill.position.set(-6, -2, 4); scene.add(lFill);
+
+/* ── HELPERS ── */
+function pts(positions, color, size, opacity) {
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    var mat = new THREE.PointsMaterial({
+        color: color, size: size, transparent: true, opacity: opacity,
+        blending: THREE.AdditiveBlending, depthWrite: false
+    });
+    return new THREE.Points(geo, mat);
+}
+
+function spherePts(n, rMin, rMax) {
+    var p = new Float32Array(n * 3);
+    for (var i = 0; i < n; i++) {
+        var th = Math.random() * Math.PI * 2;
+        var ph = Math.acos(2 * Math.random() - 1);
+        var r = rMin + Math.random() * (rMax - rMin);
+        p[i*3]   = r * Math.sin(ph) * Math.cos(th);
+        p[i*3+1] = r * Math.sin(ph) * Math.sin(th);
+        p[i*3+2] = r * Math.cos(ph);
+    }
+    return p;
+}
+
+/* ══════════════════════════════════════════════════
+   STATION 0 — BACKGROUND STARS
+══════════════════════════════════════════════════ */
+var starPos = new Float32Array(16000 * 3);
+for (var i = 0; i < 16000; i++) {
+    starPos[i*3]   = (Math.random() - 0.5) * 200;
+    starPos[i*3+1] = (Math.random() - 0.5) * 200;
+    starPos[i*3+2] = (Math.random() - 0.5) * 200 - 60;
+}
+var stars = pts(starPos, 0x99bbff, 0.042, 0.6);
+scene.add(stars);
+
+/* Nebula clusters */
+var neb1Pos = spherePts(3000, 0, 45);
+for (var i = 0; i < 3000; i++) { neb1Pos[i*3] += 15; neb1Pos[i*3+2] -= 30; }
+scene.add(pts(neb1Pos, 0x5e9eff, 0.05, 0.18));
+
+var neb2Pos = spherePts(2000, 0, 35);
+for (var i = 0; i < 2000; i++) { neb2Pos[i*3] -= 20; neb2Pos[i*3+1] += 10; neb2Pos[i*3+2] -= 50; }
+scene.add(pts(neb2Pos, 0x2997ff, 0.05, 0.12));
+
+/* ══════════════════════════════════════════════════
+   STATION 1 — HERO · LAPTOP 3D (modelo real PBR, z = 0)
+   classic_laptop (Poly Haven) + anillos + partículas
+══════════════════════════════════════════════════ */
+var heroG = new THREE.Group();
+heroG.position.set(3.2, 0.1, 0);
+scene.add(heroG);
+
+/* Holder que flota y gira; el modelo se añade al terminar de cargar */
+var heroLaptop = new THREE.Group();
+heroG.add(heroLaptop);
+
+var gltfLoader = new THREE.GLTFLoader();
+gltfLoader.load('models/classic_laptop.glb', function (gltf) {
+    var model = gltf.scene;
+    var box = new THREE.Box3().setFromObject(model);
+    var size = box.getSize(new THREE.Vector3());
+    var center = box.getCenter(new THREE.Vector3());
+    model.position.sub(center);                        // centrar en el origen
+    var s = 3.4 / Math.max(size.x, size.y, size.z);    // normalizar tamaño
+    model.scale.setScalar(s);
+    model.rotation.y = -0.6;
+    heroLaptop.add(model);
+    buildLaptopScreen(model);
+}, undefined, function (err) {
+    console.warn('No se pudo cargar la laptop (sirve la página por http, no file://):', err);
+});
+
+/* Anillos de órbita de datos alrededor de la laptop */
+var ring1 = new THREE.Mesh(new THREE.TorusGeometry(2.9, 0.006, 8, 200),
+    new THREE.MeshBasicMaterial({ color: 0x2997ff, transparent: true, opacity: 0.3, blending: THREE.AdditiveBlending }));
+ring1.rotation.x = Math.PI / 3;
+heroG.add(ring1);
+
+var ring2 = new THREE.Mesh(new THREE.TorusGeometry(3.6, 0.004, 8, 200),
+    new THREE.MeshBasicMaterial({ color: 0x5e9eff, transparent: true, opacity: 0.18, blending: THREE.AdditiveBlending }));
+ring2.rotation.x = Math.PI * 0.6;
+ring2.rotation.z = 0.4;
+heroG.add(ring2);
+
+var heroCloud = pts(spherePts(700, 3.4, 6.8), 0x2997ff, 0.016, 0.22);
+heroG.add(heroCloud);
+
+/* ── PANTALLA VIVA DE LA LAPTOP (Acto 2) ──
+   Canvas con proyectos reales mapeado en la pantalla del modelo,
+   con transición glitch tipo "cambio de pantalla". */
+var LP = [
+    { img: 'entuzona.png',                  name: 'EntuZona',                tag: 'Marketplace local · RD' },
+    { img: 'citaly.png',                    name: 'Citaly RD',               tag: 'HealthTech · Citas' },
+    { img: 'vamosrural.png',                name: 'VamosRural',              tag: 'Turismo rural · Web' },
+    { img: 'The Shadows of Quisqueya.png',  name: 'Shadows of Quisqueya',    tag: 'Game Dev · Unity' }
+];
+var lpImgs = LP.map(function (p) { var im = new Image(); im.src = p.img; return im; });
+var lpCanvas = document.createElement('canvas');
+lpCanvas.width = 1024; lpCanvas.height = 820;
+var lpCtx = lpCanvas.getContext('2d');
+var lpTex = new THREE.CanvasTexture(lpCanvas);
+lpTex.encoding = THREE.sRGBEncoding;
+var lpIndex = 0, lpReady = false, lpGlitch = 0, screenLight = null, screenPlane = null;
+
+function lpDraw(idx, g) {
+    var W = lpCanvas.width, H = lpCanvas.height, ctx = lpCtx;
+    ctx.clearRect(0, 0, W, H);
+    /* fondo */
+    ctx.fillStyle = '#05080f'; ctx.fillRect(0, 0, W, H);
+    /* barra superior tipo navegador */
+    var barH = 70;
+    ctx.fillStyle = '#0c1322'; ctx.fillRect(0, 0, W, barH);
+    var dots = ['#FF5F57', '#FEBC2E', '#28C840'];
+    for (var d = 0; d < 3; d++) { ctx.beginPath(); ctx.arc(40 + d * 34, barH / 2, 9, 0, 6.2832); ctx.fillStyle = dots[d]; ctx.fill(); }
+    ctx.fillStyle = '#1b2740'; ctx.fillRect(170, barH / 2 - 18, W - 230, 36);
+    ctx.fillStyle = '#7d8aa3'; ctx.font = '500 24px -apple-system, Arial'; ctx.textBaseline = 'middle';
+    ctx.fillText('bryanmarc.dev/' + LP[idx].name.toLowerCase().replace(/[^a-z]/g, ''), 195, barH / 2 + 1);
+    /* imagen del proyecto (cover) */
+    var im = lpImgs[idx], ax = 0, ay = barH, aw = W, ah = H - barH;
+    if (im && im.complete && im.naturalWidth) {
+        var sc = Math.max(aw / im.naturalWidth, ah / im.naturalHeight);
+        var iw = im.naturalWidth * sc, ih = im.naturalHeight * sc;
+        ctx.drawImage(im, ax + (aw - iw) / 2, ay + (ah - ih) / 2, iw, ih);
+    } else {
+        ctx.fillStyle = '#0a1424'; ctx.fillRect(ax, ay, aw, ah);
+    }
+    /* gradiente inferior + título */
+    var grd = ctx.createLinearGradient(0, H - 240, 0, H);
+    grd.addColorStop(0, 'rgba(5,8,15,0)'); grd.addColorStop(1, 'rgba(5,8,15,.92)');
+    ctx.fillStyle = grd; ctx.fillRect(0, H - 240, W, 240);
+    ctx.fillStyle = '#2997ff'; ctx.font = '700 22px -apple-system, Arial';
+    ctx.fillText(LP[idx].tag.toUpperCase(), 44, H - 120);
+    ctx.fillStyle = '#fff'; ctx.font = '700 58px -apple-system, Arial';
+    ctx.fillText(LP[idx].name, 44, H - 66);
+    /* scanlines sutiles */
+    ctx.fillStyle = 'rgba(0,0,0,.08)';
+    for (var y = barH; y < H; y += 4) ctx.fillRect(0, y, W, 2);
+    /* GLITCH: franjas desplazadas + barrido + estática */
+    if (g > 0.001) {
+        var slices = 16;
+        for (var s = 0; s < slices; s++) {
+            var sy = Math.random() * H, sh = H / slices;
+            var dx = (Math.random() - 0.5) * 90 * g;
+            ctx.drawImage(lpCanvas, 0, sy, W, sh, dx, sy, W, sh);
+        }
+        ctx.fillStyle = 'rgba(41,151,255,' + (0.12 * g) + ')'; ctx.fillRect(0, 0, W, H);
+        var ly = ((1 - g) * H) % H;
+        ctx.fillStyle = 'rgba(180,230,255,' + (0.5 * g) + ')'; ctx.fillRect(0, ly, W, 4);
+        if (g > 0.55) { /* destello de cambio de canal */
+            ctx.fillStyle = 'rgba(255,255,255,' + ((g - 0.55) * 0.8) + ')'; ctx.fillRect(0, 0, W, H);
+        }
+    }
+    lpTex.needsUpdate = true;
+}
+
+function buildLaptopScreen(model) {
+    var sw = 0.4484, sh = 0.3666;
+    var mat = new THREE.MeshBasicMaterial({ map: lpTex, toneMapped: false });
+    screenPlane = new THREE.Mesh(new THREE.PlaneGeometry(sw, sh), mat);
+    screenPlane.position.set(0.0004, 0.2416, 0.0063 + 0.002);   // justo delante de la pantalla real
+    model.add(screenPlane);
+    /* luz tenue con el tinte de la pantalla */
+    screenLight = new THREE.PointLight(0x2997ff, 0.5, 2.2);
+    screenLight.position.set(0, 0.2416, 0.18);
+    model.add(screenLight);
+    lpReady = true;
+    lpDraw(lpIndex, 0);
+}
+
+function setLaptopScreen(idx, withGlitch) {
+    if (!lpReady) { lpIndex = idx; return; }
+    if (idx === lpIndex && withGlitch) return;
+    lpIndex = idx;
+    if (!withGlitch) { lpDraw(lpIndex, 0); return; }
+    gsap.killTweensOf(window.__lpG || {});
+    var o = { g: 1 };
+    window.__lpG = o;
+    gsap.to(o, { g: 0, duration: 0.55, ease: 'power2.out', onUpdate: function () { lpGlitch = o.g; lpDraw(lpIndex, o.g); } });
+}
+
+/* auto-ciclo de la pantalla cuando la laptop está a la vista */
+setInterval(function () {
+    if (!lpReady || journeyActive) return;
+    setLaptopScreen((lpIndex + 1) % LP.length, true);
+}, 3800);
+
+/* ══════════════════════════════════════════════════
+   STATION 2 — ARQUITECTURA · BOMBILLA 3D (modelo real, z = -12)
+   "De la idea al producto" — lightbulb (Poly Haven)
+══════════════════════════════════════════════════ */
+var archG = new THREE.Group();
+archG.position.set(-1, 0, -12);
+scene.add(archG);
+
+/* Holder que flota y gira; el modelo se añade al cargar */
+var bulbHolder = new THREE.Group();
+archG.add(bulbHolder);
+
+/* Luz cálida dentro de la bombilla (idea encendida) — arranca apagada */
+var bulbLight = new THREE.PointLight(0xffdca8, 0, 9);
+bulbLight.position.set(0, 0, 0);
+archG.add(bulbLight);
+var bulbMats = [];   // materiales del filamento (para encenderlo en la intro)
+
+/* glow propio del filamento — garantiza el encendido visible en r128 */
+var glowCanvas = document.createElement('canvas'); glowCanvas.width = glowCanvas.height = 128;
+var gctx = glowCanvas.getContext('2d');
+var gg = gctx.createRadialGradient(64, 64, 0, 64, 64, 64);
+gg.addColorStop(0, 'rgba(255,244,206,1)');
+gg.addColorStop(0.22, 'rgba(255,214,150,0.85)');
+gg.addColorStop(1, 'rgba(255,180,90,0)');
+gctx.fillStyle = gg; gctx.fillRect(0, 0, 128, 128);
+var bulbGlow = new THREE.Sprite(new THREE.SpriteMaterial({
+    map: new THREE.CanvasTexture(glowCanvas), transparent: true, opacity: 0,
+    blending: THREE.AdditiveBlending, depthWrite: false
+}));
+bulbGlow.scale.set(2.4, 2.4, 1);
+bulbGlow.position.set(0, -0.05, 0);
+archG.add(bulbGlow);
+
+gltfLoader.load('models/lightbulb.glb', function (gltf) {
+    var model = gltf.scene;
+    var box = new THREE.Box3().setFromObject(model);
+    var size = box.getSize(new THREE.Vector3());
+    var center = box.getCenter(new THREE.Vector3());
+    model.position.sub(center);                        // centrar en el origen
+    var s = 3.6 / Math.max(size.x, size.y, size.z);    // normalizar tamaño
+    model.scale.setScalar(s);
+    /* filamento emisivo (apagado al inicio) + vidrio transparente (r128 no soporta transmission) */
+    model.traverse(function (o) {
+        if (!o.isMesh || !o.material) return;
+        var nm = (o.material.name || '').toLowerCase();
+        if (o.material.emissiveMap || nm.indexOf('base') >= 0 || nm.indexOf('filament') >= 0) {
+            o.material.emissive = new THREE.Color(0xffd9a0);
+            o.material.emissiveIntensity = 0;
+            bulbMats.push(o.material);
+        }
+        if (nm.indexOf('glass') >= 0) {
+            o.material.transparent = true;
+            o.material.opacity = 0.2;
+            o.material.depthWrite = false;
+            o.material.side = THREE.DoubleSide;
+        }
+    });
+    bulbHolder.add(model);
+    bulbLoaded = true; maybeStartIntro();
+}, undefined, function (err) {
+    console.warn('No se pudo cargar la bombilla (sirve la página por http):', err);
+    bulbLoaded = true; maybeStartIntro();
+});
+
+archG.add(pts(spherePts(700, 4, 10), 0x2997ff, 0.018, 0.15));
+
+/* ══════════════════════════════════════════════════
+   STATION 4 — STATS · RED NEURONAL POR CAPAS (z = -37)
+   Capas de nodos conectadas (deep learning / IA)
+══════════════════════════════════════════════════ */
+var nnG = new THREE.Group();
+nnG.position.set(0, 0, -37);
+scene.add(nnG);
+
+var nnLayers = [4, 6, 6, 5, 3];
+var nnGap = 2.5, nnNodePos = [], nnStart = [], nnCum = 0;
+nnLayers.forEach(function (count, li) {
+    nnStart.push(nnCum); nnCum += count;
+    var lx = (li - (nnLayers.length - 1) / 2) * nnGap;
+    for (var k = 0; k < count; k++) {
+        var ly = (k - (count - 1) / 2) * 1.5;
+        nnNodePos.push(new THREE.Vector3(lx, ly, 0));
+    }
+});
+var nnArr = new Float32Array(nnNodePos.length * 3);
+nnNodePos.forEach(function (v, i) { nnArr[i*3]=v.x; nnArr[i*3+1]=v.y; nnArr[i*3+2]=v.z; });
+var nnPoints = pts(nnArr, 0x64d2ff, 0.13, 0.95);
+nnG.add(nnPoints);
+
+/* Conexiones densas entre capas adyacentes */
+var nnlv = [];
+for (var li = 0; li < nnLayers.length - 1; li++) {
+    for (var a = 0; a < nnLayers[li]; a++) {
+        for (var b = 0; b < nnLayers[li + 1]; b++) {
+            var va = nnNodePos[nnStart[li] + a];
+            var vb = nnNodePos[nnStart[li + 1] + b];
+            nnlv.push(va.x, va.y, va.z, vb.x, vb.y, vb.z);
+        }
+    }
+}
+var nnlGeo = new THREE.BufferGeometry();
+nnlGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(nnlv), 3));
+var nnLines = new THREE.LineSegments(nnlGeo, new THREE.LineBasicMaterial({ color: 0x2997ff, transparent: true, opacity: 0.12, blending: THREE.AdditiveBlending }));
+nnG.add(nnLines);
+nnG.add(pts(spherePts(1000, 7, 16), 0x5e9eff, 0.018, 0.12));
+
+/* ══════════════════════════════════════════════════
+   STATION 5 — CONTACTO · STREAM DE DATOS (z = -50)
+   Columnas de "código" cayendo (estilo matrix / data flow)
+══════════════════════════════════════════════════ */
+var dataG = new THREE.Group();
+dataG.position.set(0, 0, -50);
+scene.add(dataG);
+
+var COLS = 72, PER = 18, DN = COLS * PER;
+var dpos = new Float32Array(DN * 3);
+var dspeed = new Float32Array(COLS);
+for (var c = 0; c < COLS; c++) {
+    var cx = (Math.random() - 0.5) * 17;
+    var cz = (Math.random() - 0.5) * 11 - 2;
+    dspeed[c] = 0.02 + Math.random() * 0.06;
+    for (var p = 0; p < PER; p++) {
+        var di = c * PER + p;
+        dpos[di*3]   = cx;
+        dpos[di*3+1] = (Math.random() * 15) - 7.5;
+        dpos[di*3+2] = cz;
+    }
+}
+var dGeo = new THREE.BufferGeometry();
+dGeo.setAttribute('position', new THREE.BufferAttribute(dpos, 3));
+var dataPoints = new THREE.Points(dGeo, new THREE.PointsMaterial({
+    color: 0x2997ff, size: 0.085, transparent: true, opacity: 0.85,
+    blending: THREE.AdditiveBlending, depthWrite: false
+}));
+dataG.add(dataPoints);
+dataG.add(pts(spherePts(1100, 5, 13), 0x5e9eff, 0.016, 0.12));
+
+/* ══════════════════════════════════════════════════
+   ESTACIÓN PERFIL — "¿QUIÉN SOY?" (foto 3D)
+══════════════════════════════════════════════════ */
+var profileGroup = new THREE.Group();
+profileGroup.position.set(1.6, 0.25, 5.6);
+profileGroup.rotation.y = -0.14;
+scene.add(profileGroup);
+
+var profW = 1.7, profH = 2.25;
+var frame = new THREE.Mesh(new THREE.PlaneGeometry(profW + 0.18, profH + 0.18),
+    new THREE.MeshBasicMaterial({ color: 0x2997ff, transparent: true, opacity: 0.22, blending: THREE.AdditiveBlending }));
+frame.position.z = -0.02;
+profileGroup.add(frame);
+var profMat = new THREE.MeshBasicMaterial({ color: 0x0a1020, toneMapped: false });
+var profMesh = new THREE.Mesh(new THREE.PlaneGeometry(profW, profH), profMat);
+profileGroup.add(profMesh);
+new THREE.TextureLoader().load('Yo.jpeg', function (tex) {
+    tex.encoding = THREE.sRGBEncoding;
+    profMat.map = tex; profMat.color.set(0xffffff); profMat.needsUpdate = true;
+}, undefined, function () {});
+profileGroup.add(pts(spherePts(500, 2, 5), 0x5e9eff, 0.016, 0.3));
+var profLight = new THREE.PointLight(0x2997ff, 1.2, 6);
+profLight.position.set(0, 0, 1.5);
+profileGroup.add(profLight);
+
+/* ══════════════════════════════════════════════════
+   CÁMARA DIRIGIDA POR SCROLL
+   Tramo 1 (#journey): viaje inmersivo por waypoints.
+   Tramo 2 (web): la cámara deriva de fondo (z 9 → -58).
+══════════════════════════════════════════════════ */
+gsap.registerPlugin(ScrollTrigger);
+
+var camState = { z: 9 };       // modo web (fondo)
+var journeyT = 0, journeyActive = true;
+var V3a = new THREE.Vector3(), V3b = new THREE.Vector3(), Qtmp = new THREE.Quaternion();
+
+/* damping de cámara (transiciones suaves con inercia) */
+var camCur  = new THREE.Vector3(-1, -0.25, -8.4);
+var lookCur = new THREE.Vector3(-1, -0.35, -12);
+var camGoal = new THREE.Vector3(), lookGoal = new THREE.Vector3();
+
+function lerp(a, b, t) { return a + (b - a) * t; }
+function smooth(t) { return t * t * (3 - 2 * t); }   // smoothstep
+
+/* waypoints del viaje: {t, pos:[x,y,z], look:[x,y,z]} ; algunos usan screen-lock */
+var WP = [
+    { t: 0.00, pos: [-1.0, -0.25, -8.4], look: [-1, -0.35, -12] },  // bombilla alejada, mira al filamento
+    { t: 0.14, pos: [-1.0,  0.10, -6.6], look: [-1, -0.10, -12] },  // encendida, retrocede
+    { t: 0.27, pos: [ 2.0,  0.60, -8.2], look: [-1,  0.00, -12] },  // órbita lateral
+    { t: 0.40, pos: [ 2.8, 1.00,  -3.60], look: [ 3.0, 0.6, -1] },  // vuela hacia la laptop
+    { t: 0.52, screen: 1.9 },                                        // se acerca a la pantalla
+    { t: 0.66, screen: 1.05 },                                       // PEGADO a la pantalla
+    { t: 0.74, pos: [ 2.6, 0.7,   3.2],  look: [ 1.6, 0.25, 5.6] }, // gira hacia el perfil
+    { t: 0.88, pos: [ 1.65,0.3,   7.7],  look: [ 1.6, 0.25, 5.6] }, // perfil encuadrado
+    { t: 1.00, pos: [ 0.0, 0.0,   9.0],  look: [ 0, 0, -40] }        // aterriza en el hero (web)
+];
+
+/* devuelve {pos, look} para el progreso t del viaje */
+function journeyCam(t) {
+    /* localizar segmento */
+    var i = 0;
+    for (; i < WP.length - 1; i++) if (t < WP[i + 1].t) break;
+    var a = WP[i], b = WP[Math.min(i + 1, WP.length - 1)];
+    var seg = (b.t - a.t) || 1, lt = smooth(Math.min(Math.max((t - a.t) / seg, 0), 1));
+
+    var pa = waypointPose(a), pb = waypointPose(b);
+    return {
+        px: lerp(pa.px, pb.px, lt), py: lerp(pa.py, pb.py, lt), pz: lerp(pa.pz, pb.pz, lt),
+        lx: lerp(pa.lx, pb.lx, lt), ly: lerp(pa.ly, pb.ly, lt), lz: lerp(pa.lz, pb.lz, lt)
+    };
+}
+
+/* resuelve una pose absoluta de un waypoint (estático o screen-lock) */
+function waypointPose(w) {
+    if (w.screen && screenPlane) {
+        screenPlane.getWorldPosition(V3a);
+        V3b.set(0, 0, 1).applyQuaternion(screenPlane.getWorldQuaternion(Qtmp)).normalize();
+        return {
+            px: V3a.x + V3b.x * w.screen, py: V3a.y + V3b.y * w.screen, pz: V3a.z + V3b.z * w.screen,
+            lx: V3a.x, ly: V3a.y, lz: V3a.z
+        };
+    }
+    if (w.screen) { /* aún sin cargar: aproxima frente a la laptop */
+        return { px: 3.2, py: 1.4, pz: 2.0 + w.screen, lx: 3.2, ly: 1.4, lz: 0 };
+    }
+    return { px: w.pos[0], py: w.pos[1], pz: w.pos[2], lx: w.look[0], ly: w.look[1], lz: w.look[2] };
+}
+
+/* encendido de la bombilla en función del progreso del viaje */
+function bulbScroll(t) {
+    var lit = Math.min(Math.max(t / 0.13, 0), 1);
+    var fl = lit < 0.65 ? (0.35 + 0.65 * (0.5 + 0.5 * Math.sin(t * 140))) : 1;  // parpadeo determinista
+    var v = lit * fl;
+    bulbLight.intensity = v * 5.0;
+    bulbEmissive(v * 9.0);
+    if (bulbGlow) { bulbGlow.material.opacity = v * 0.95; var gs = 2.2 + v * 0.7; bulbGlow.scale.set(gs, gs, 1); }
+}
+
+/* proyectos cambian según el sub-scroll del tramo de pantalla */
+var lastShown = -1;
+function projectsScroll(t) {
+    var a = 0.46, b = 0.72;
+    if (t < a || t > b) return;
+    var idx = Math.min(Math.floor(((t - a) / (b - a)) * LP.length), LP.length - 1);
+    if (idx !== lastShown) { lastShown = idx; setLaptopScreen(idx, true); }
+}
+
+/* ScrollTrigger del viaje inmersivo */
+ScrollTrigger.create({
+    trigger: '#journey', start: 'top top', end: 'bottom bottom', scrub: 1.2,
+    onUpdate: function (self) { journeyT = self.progress; },
+    onToggle: function (self) { journeyActive = self.isActive; }
+});
+/* ScrollTrigger del modo web (la cámara deriva de fondo) */
+gsap.to(camState, {
+    z: -58, ease: 'none',
+    scrollTrigger: { trigger: '#webstart', start: 'top top', end: 'bottom bottom', scrub: 2 }
+});
+
+function bulbEmissive(v) { for (var i = 0; i < bulbMats.length; i++) bulbMats[i].emissiveIntensity = v; }
+var bulbLoaded = false;
+function maybeStartIntro() {}   // (compat) la intro ahora es el viaje por scroll
+
+/* ── ARRANQUE: fade del negro inicial (evita FOUC) ── */
+var blackEl = document.getElementById('intro-black');
+var skipEl  = document.getElementById('intro-skip');
+if (skipEl) skipEl.style.display = 'none';
+camera.position.set(WP[0].pos[0], WP[0].pos[1], WP[0].pos[2]);
+window.scrollTo(0, 0);
+window.addEventListener('load', function () {
+    gsap.to(blackEl, { opacity: 0, duration: 1.1, ease: 'power2.out', onComplete: function () { blackEl.style.display = 'none'; } });
+});
+
+/* ── ENTRADA DEL HERO (al salir del viaje) ── */
+var heroShown = false;
+function playHeroEntrance() {
+    if (heroShown) return; heroShown = true;
+    gsap.to('.hero-title .word', { y: '0%', duration: 1.4, stagger: 0.16, ease: 'power4.out' });
+    gsap.to('.hero-badge',  { opacity: 1, duration: 0.9, ease: 'power3.out', delay: 0.2 });
+    gsap.to('.hero-right',  { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', delay: 0.35 });
+    gsap.to('.hero-scroll', { opacity: 1, duration: 0.9, delay: 0.8 });
+}
+ScrollTrigger.create({ trigger: '#hero', start: 'top 70%', once: true, onEnter: playHeroEntrance });
+
+/* ── OVERLAYS DEL VIAJE (beats de texto sincronizados al scroll) ── */
+var beats = document.querySelectorAll('.beat');
+ScrollTrigger.create({
+    trigger: '#journey', start: 'top top', end: 'bottom bottom', scrub: 0.5,
+    onUpdate: function (self) {
+        var t = self.progress;
+        beats.forEach(function (b) {
+            var s = parseFloat(b.dataset.start), e = parseFloat(b.dataset.end);
+            var mid = (s + e) / 2, half = (e - s) / 2;
+            var op = 1 - Math.min(Math.abs(t - mid) / half, 1);
+            b.style.opacity = (op * op).toFixed(3);
+        });
+    }
+});
+
+/* ── SECTION REVEALS ── */
+gsap.utils.toArray('.arch-card').forEach(function(el, i) {
+    gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 84%' }, y: 50, opacity: 0, duration: 0.9, delay: i * 0.12, ease: 'power3.out' });
+});
+gsap.from('.arch-hdr', { scrollTrigger: { trigger: '#arquitectura', start: 'top 80%' }, y: 40, opacity: 0, duration: 1, ease: 'power3.out' });
+gsap.from('.gp', { scrollTrigger: { trigger: '.gprojects', start: 'top 80%' }, opacity: 0, y: 28, duration: 0.6, stagger: 0.04, ease: 'power3.out' });
+gsap.from('.testi-card', { scrollTrigger: { trigger: '.testi-grid', start: 'top 82%' }, opacity: 0, y: 40, duration: 0.8, stagger: 0.15, ease: 'power3.out' });
+/* Servicios — escenario que cambia de color de forma CONTINUA con el scroll */
+function hexToRgb(h) { var n = parseInt(h.replace('#', ''), 16); return [(n >> 16) & 255, (n >> 8) & 255, n & 255]; }
+function mix(a, b, t) { return 'rgb(' + Math.round(a[0]+(b[0]-a[0])*t) + ',' + Math.round(a[1]+(b[1]-a[1])*t) + ',' + Math.round(a[2]+(b[2]-a[2])*t) + ')'; }
+var svcStage = document.querySelector('.svc-stage');
+var svcPanels = gsap.utils.toArray('.svc-panel');
+var svcColors = [hexToRgb('#0a1230')].concat(svcPanels.map(function (p) { return hexToRgb(p.dataset.color || '#1b4dff'); }));
+if (svcStage && svcColors.length > 1) {
+    ScrollTrigger.create({
+        trigger: '#servicios', start: 'top top', end: 'bottom bottom', scrub: 0.4,
+        onUpdate: function (self) {
+            var p = self.progress * (svcColors.length - 1);
+            var i = Math.min(Math.floor(p), svcColors.length - 2);
+            svcStage.style.backgroundColor = mix(svcColors[i], svcColors[i + 1], p - i);
+        }
+    });
+}
+/* transición servicio a servicio: el contenido entra desde abajo y sale por arriba con el scroll */
+function svcPass(el, trig) {
+    gsap.fromTo(el, { opacity: 0, y: 100, scale: 0.92 }, {
+        opacity: 1, y: 0, scale: 1, ease: 'none',
+        scrollTrigger: { trigger: trig, start: 'top 90%', end: 'top 40%', scrub: true }
+    });
+    gsap.to(el, {
+        opacity: 0, y: -80, scale: 0.95, ease: 'none',
+        scrollTrigger: { trigger: trig, start: 'bottom 60%', end: 'bottom 10%', scrub: true }
+    });
+}
+svcPanels.forEach(function (panel) { svcPass(panel.querySelector('.svc-panel-in'), panel); });
+/* el intro "¿qué quieres construir?" se desvanece hacia arriba al entrar a los servicios */
+gsap.to('.svc-intro', {
+    opacity: 0, y: -100, ease: 'none',
+    scrollTrigger: { trigger: '.svc-intro', start: 'bottom 80%', end: 'bottom 20%', scrub: true }
+});
+gsap.from('.about-img-wrap', { scrollTrigger: { trigger: '#sobre-mi', start: 'top 78%' }, opacity: 0, x: -60, duration: 1, ease: 'power3.out' });
+gsap.from('.about-inner > div:last-child', { scrollTrigger: { trigger: '#sobre-mi', start: 'top 78%' }, opacity: 0, x: 60, duration: 1, ease: 'power3.out' });
+gsap.from('.philo-text', { scrollTrigger: { trigger: '#filosofia', start: 'top 72%' }, opacity: 0, y: 70, duration: 1.4, ease: 'power4.out' });
+
+/* ── STATS COUNTUP ── */
+document.querySelectorAll('.stat-item').forEach(function(item) {
+    var target = parseInt(item.querySelector('.stat-num').dataset.target);
+    var valEl  = item.querySelector('.stat-val');
+    ScrollTrigger.create({
+        trigger: item, start: 'top 86%', once: true,
+        onEnter: function() {
+            gsap.fromTo({ v: 0 }, { v: target }, {
+                duration: 1.9, ease: 'power2.out',
+                onUpdate: function() { valEl.textContent = Math.round(this.targets()[0].v); }
+            });
+        }
+    });
+});
+
+/* ── STICKY PANELS ── */
+var panels = document.querySelectorAll('.panel');
+var pdots  = document.querySelectorAll('.pdot');
+var curPanel = 0;
+function showPanel(i) {
+    if (i === curPanel) return;
+    panels.forEach(function(p, idx) { p.classList.toggle('active', idx === i); });
+    pdots.forEach(function(d, idx) { d.classList.toggle('on', idx === i); });
+    curPanel = i;
+    setLaptopScreen(i % LP.length, true);   // sincroniza la pantalla de la laptop
+    var ap = panels[i];                      // glitch "cambio de pantalla" en el panel
+    if (ap) { ap.classList.remove('switching'); void ap.offsetWidth; ap.classList.add('switching'); }
+}
+pdots.forEach(function(d) { d.addEventListener('click', function() { showPanel(+d.dataset.panel); }); });
+ScrollTrigger.create({
+    trigger: '.sticky-wrap', start: 'top top', end: 'bottom bottom',
+    pin: '.sticky-inner',
+    onUpdate: function(self) { showPanel(Math.min(Math.floor(self.progress * panels.length), panels.length - 1)); }
+});
+
+/* ── TERMINAL TYPING ── */
+var typedEl = document.getElementById('ttyped');
+var termCur = document.getElementById('tcursor');
+var txt = 'hire_developer --open-to-work';
+var ti = 0;
+ScrollTrigger.create({
+    trigger: '#contacto', start: 'top 70%', once: true,
+    onEnter: function() {
+        (function type() {
+            if (ti < txt.length) {
+                typedEl.textContent += txt[ti++];
+                setTimeout(type, 52 + Math.random() * 35);
+            } else {
+                setTimeout(function() {
+                    termCur.style.display = 'none';
+                    document.getElementById('tform').style.display = 'block';
+                }, 480);
+            }
+        })();
+    }
+});
+
+/* ══════════════════════════════════════════════════
+   MOUSE PARALLAX
+══════════════════════════════════════════════════ */
+var mX = 0, mY = 0;
+window.addEventListener('mousemove', function(e) {
+    mX = (e.clientX / innerWidth - 0.5) * 2;
+    mY = -(e.clientY / innerHeight - 0.5) * 2;
+});
+
+/* ══════════════════════════════════════════════════
+   ANIMATION LOOP
+══════════════════════════════════════════════════ */
+var clock = 0;
+(function animate() {
+    requestAnimationFrame(animate);
+    clock += 0.007;
+
+    /* Camera */
+    if (journeyActive) {
+        bulbScroll(journeyT);
+        projectsScroll(journeyT);
+        var jc = journeyCam(journeyT);
+        camGoal.set(jc.px, jc.py, jc.pz);
+        lookGoal.set(jc.lx, jc.ly, jc.lz);
+        camCur.lerp(camGoal, 0.1);
+        lookCur.lerp(lookGoal, 0.1);
+        camera.position.copy(camCur);
+        camera.lookAt(lookCur);
+    } else {
+        camera.rotation.set(0, 0, 0);
+        camera.position.z += (camState.z - camera.position.z) * 0.06;
+        camera.position.x += (mX * 0.55 - camera.position.x) * 0.025;
+        camera.position.y += (mY * 0.28 - camera.position.y) * 0.025;
+    }
+
+    /* Move key lights with camera */
+    lC.position.z = camera.position.z + 8;
+    lP.position.z = camera.position.z + 6;
+    lT.position.z = camera.position.z - 8;
+
+    /* HERO — laptop (congelada durante el viaje para el close-up) */
+    if (!journeyActive) {
+        heroLaptop.rotation.y += 0.005;
+        heroLaptop.position.y  = Math.sin(clock * 1.1) * 0.12;
+        heroLaptop.rotation.x  = Math.sin(clock * 0.5) * 0.05;
+    }
+    if (screenLight) screenLight.intensity = 0.45 + Math.sin(clock * 5) * 0.08 + lpGlitch * 0.8;
+    ring1.rotation.z   += 0.0024;
+    ring2.rotation.z   -= 0.0018;
+    heroCloud.rotation.y += 0.0006;
+
+    /* ARCH — bombilla (congelada durante el viaje; el scroll la enciende) */
+    if (!journeyActive) {
+        bulbHolder.rotation.y += 0.004;
+        bulbHolder.position.y  = Math.sin(clock * 1.0) * 0.14;
+        bulbLight.intensity = 2.8 + Math.sin(clock * 4) * 0.6 + Math.sin(clock * 11) * 0.2;
+    }
+    profileGroup.rotation.y = -0.14 + Math.sin(clock * 0.6) * 0.04;
+    profileGroup.visible = journeyActive;
+
+    /* NEURAL NET — balanceo + activación de conexiones */
+    nnG.rotation.y = Math.sin(clock * 0.25) * 0.45;
+    nnG.rotation.x = Math.cos(clock * 0.2) * 0.08;
+    nnLines.material.opacity  = 0.08 + Math.abs(Math.sin(clock * 1.5)) * 0.15;
+    nnPoints.material.opacity = 0.75 + Math.sin(clock * 3) * 0.2;
+
+    /* DATA STREAM — columnas cayendo (matrix) */
+    var dArr = dGeo.attributes.position.array;
+    for (var di = 0; di < DN; di++) {
+        dArr[di*3+1] -= dspeed[(di / PER) | 0];
+        if (dArr[di*3+1] < -7.5) dArr[di*3+1] += 15;
+    }
+    dGeo.attributes.position.needsUpdate = true;
+    dataG.rotation.y = Math.sin(clock * 0.15) * 0.14;
+
+    /* STARS */
+    stars.rotation.y += 0.00007;
+
+    /* LIGHT PULSE */
+    lC.intensity = 8 + Math.sin(clock * 1.6) * 1.8;
+    lP.intensity = 6 + Math.cos(clock * 1.3) * 1.5;
+    lT.intensity = 3.5 + Math.sin(clock * 0.8) * 1;
+
+    renderer.render(scene, camera);
+})();
+
+/* ══════════════════════════════════════════════════
+   RESIZE
+══════════════════════════════════════════════════ */
+window.addEventListener('resize', function() {
+    W = innerWidth; H = innerHeight;
+    camera.aspect = W / H;
+    camera.updateProjectionMatrix();
+    renderer.setSize(W, H);
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+});
+
+})(); /* end IIFE */
+
+/* TERMINAL SUBMIT */
+function submitTerm() {
+    var n = document.getElementById('tn').value.trim();
+    var e = document.getElementById('te').value.trim();
+    var m = document.getElementById('tm').value.trim();
+    if (!n || !e || !m) { alert('Por favor completa todos los campos.'); return; }
+    document.getElementById('tform').style.display = 'none';
+    document.getElementById('tsuccess').style.display = 'block';
+    window.location.href = 'mailto:bmarcenlinea@gmail.com?subject=' + encodeURIComponent('Proyecto de ' + n) + '&body=' + encodeURIComponent(m + '\n\nEmail: ' + e);
+}
+
+/* ════════════ i18n — Español / English ════════════ */
+function applyLang(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-en]').forEach(function (el) {
+        if (el.dataset.es === undefined) el.dataset.es = el.innerHTML;
+        el.innerHTML = (lang === 'en') ? el.dataset.en : el.dataset.es;
+    });
+    document.querySelectorAll('[data-en-ph]').forEach(function (el) {
+        if (el.dataset.esPh === undefined) el.dataset.esPh = el.getAttribute('placeholder') || '';
+        el.setAttribute('placeholder', (lang === 'en') ? el.dataset.enPh : el.dataset.esPh);
+    });
+    var btn = document.getElementById('langToggle');
+    if (btn) btn.textContent = (lang === 'en') ? 'ES' : 'EN';
+    try { localStorage.setItem('lang', lang); } catch (e) {}
+}
+(function () {
+    var saved = 'es';
+    try { saved = localStorage.getItem('lang') || 'es'; } catch (e) {}
+    var btn = document.getElementById('langToggle');
+    if (btn) btn.addEventListener('click', function () {
+        applyLang(document.documentElement.lang === 'en' ? 'es' : 'en');
+    });
+    applyLang(saved);
+})();
+</script>
 </body>
 </html>
-
-
-
-
