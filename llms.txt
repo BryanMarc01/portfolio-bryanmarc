@@ -13,14 +13,19 @@
 React Native, Kotlin, Flutter, React, Next.js, TypeScript, Node.js, MongoDB, PostgreSQL, Firebase, GraphQL, Voice AI, OpenAI, Twilio, Unity, C#, Docker.
 
 ## Selected work
-- EntuZona — local marketplace (CEO & lead architect): https://entuzona.app/
+- EntuZona — local marketplace (CEO & lead architect): https://www.entuzona.app/
 - Citaly RD — healthtech appointments platform: https://citalyrd.com/
 - AppMyPets — pet-tech mobile app: https://appmypets.es
+- VamosRural — rural tourism platform, Spain: https://vamosrural.com/
+- Easy Online English — online English school: https://easyonlineenglish.com
+- Solares.do — real estate listings, Dominican Republic: https://solares.do/
+- Puerto Plata Center — local platform for Puerto Plata: https://www.puertoplatacenter.com
+- PROLUBE — automotive platform, Argentina: https://prolube.com.ar
 - The Shadows of Quisqueya — 3D RPG game in Unity (in development)
-- VamosRural, Easy Online English, Solares.do, Consulsoft and 16+ more production projects.
+- Consulsoft, ALS Recursos Humanos, TabGroups and more production projects.
 
 ## Stats
-20+ projects shipped to production · 12+ happy clients · 5+ countries · 3+ years of full-stack experience.
+20+ projects shipped to production · 12+ happy clients · 5+ countries · 6 years of full-stack experience.
 
 ## Contact / hire
 - WhatsApp: +1 829 494 6176
